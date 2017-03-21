@@ -1,3 +1,0 @@
-setDelayCalMode -engine default
-setIlmMode -highFanoutPort true -loopBack false 
-setImportMode -config true -keepEmptyModule true -treatUndefinedCellAsBbox false

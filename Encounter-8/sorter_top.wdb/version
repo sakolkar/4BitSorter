@@ -1,0 +1,20 @@
+WROUTE version 3.1.61 db version 1.01
+WROUTE compiled on 06/29/2009 23:59 (icmlin01)
+Date   : Tue Mar 21 15:05:23 2017
+Machine: 5013-w19 (Linux 2.6.32-573.3.1.el6.x86_64 x86_64 800Mhz)
+Version: 5.6, Unit: 2000, Final routed design
+Sbox 229 out of 229 (not accurate in multi-thread mode)
+2nd or 3rd search repair pass, 0th search repair sbox
+13 layers, 6 routing layers, 1 overlap layer
+177 macros, 21 used
+1487 components
+  1447 core components: 0 unplaced, 253 placed, 1194 fixed
+  36 pad components: 0 unplaced, 36 placed, 0 fixed
+  4 other components: 0 unplaced, 0 placed, 4 fixed
+33 logical pins
+350 nets, 317 routed
+2 special nets, 2 routed
+4117 terminals
+152946 gcells for 6 layers
+1423 real and virtual terminals
+0 violation

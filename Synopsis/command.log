@@ -1,7 +1,7 @@
 #@ # 
 #@ # Running dc_shell Version Y-2006.06-SP4 for linux -- Dec 01, 2006
-#@ # Date:   Tue Mar  7 15:55:43 2017
-#@ # Run by: akolkar@5013-w30
+#@ # Date:   Tue Mar 21 15:04:04 2017
+#@ # Run by: akolkar@5013-w19
 #@ 
 
 source /EDA/tools/synopsys/syn_vY-2006.06-SP4/admin/setup/.synopsys_dc.setup
@@ -3999,45 +3999,22 @@ source /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis/.synopsys_dc.setup
 #@ set verilogout_single_bit true
 #@ # -- End source /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis/.synopsys_dc.setup
 
-gui_start
-analyze -format vhdl ./sorter.vhd
-analyze -format vhdl ./sorter_top.vhd
-elaborate sorter_top
-check_design -multiple_designs
-uniquify
-set_dont_touch [find cell {op* inp* pad*} -hier] true
-create_clock "padClk" -period 10
-current_design sorter_top
-compile -map_effort high -boundary_optimization
-report_area
-report_power
-report_timing -path full -delay max -max_paths 1 -nworst 1
-create_clock "padClk" -period 8
-current_design sorter_top
-compile -map_effort high -boundary_optimization
-report_area
-report_power
-report_timing -path full -delay max -max_paths 1 -nworst 1
-create_clock "padClk" -period 6
-current_design sorter_top
-compile -map_effort high -boundary_optimization
-report_area
-report_power
-report_timing -path full -delay max -max_paths 1 -nworst 1
-create_clock "padClk" -period 5
-compile -map_effort high -boundary_optimization
-report_area
-report_power
-report_timing -path full -delay max -max_paths 1 -nworst 1
-create_clock "padClk" -period 4
-compile -map_effort high -boundary_optimization
-report_area
-report_power
-report_timing -path full -delay max -max_paths 1 -nworst 1
-create_clock "padClk" -period 5
-compile -map_effort high -boundary_optimization
-report_area
-report_power
-report_timing -path full -delay max -max_paths 1 -nworst 1
-write_sdc ./Synthesized/sorter_top.sdc
-write -format verilog -hierarchy -output ./Synthesized/sorter_top.v
+source compile_sorter.tcl 
+#@ gui_start
+#@ analyze -format vhdl ./sorter.vhd
+#@ analyze -format vhdl ./sorter_top.vhd
+#@ elaborate sorter_top
+#@ check_design -multiple_designs
+#@ uniquify
+#@ set_dont_touch [find cell {op* inp* pad*} -hier] true
+#@ create_clock "padClk" -period 8
+#@ current_design sorter_top
+#@ compile -map_effort high -boundary_optimization
+#@ report_area
+#@ report_power
+#@ report_timing -path full -delay max -max_paths 1 -nworst 1
+#@ write_sdc ./Synthesized/sorter_top.sdc
+#@ write -format verilog -hierarchy -output ./Synthesized/sorter_top.v
+#@ # -- End source compile_sorter.tcl
+
+exit
