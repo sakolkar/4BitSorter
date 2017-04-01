@@ -1,0 +1,91 @@
+#
+GSCLib_IO PVSSDGZ symbolPT
+I35
+#
+GSCLib_IO PVDDDGZ symbolPT
+I33
+I34
+#
+GSCLib_IO PDO12CDG symbolPT
+opResS4_0
+opResS1_2
+opResS3_0
+opResS3_1
+opResS4_3
+opResS2_3
+opResS2_2
+opResS3_3
+opResS4_1
+opResS3_2
+opResS2_0
+opResS1_0
+opResS2_1
+opResS1_3
+opResS1_1
+opResS4_2
+#
+lab3 sorter symbol
+coreG
+#
+GSCLib_IO PDUDGZ symbolPT
+inpA_2
+inpA_0
+inpA_1
+inpD_3
+padClkG
+inpB_3
+inpD_1
+inpA_3
+inpB_1
+inpD_2
+inpD_0
+inpC_2
+inpC_1
+inpB_0
+inpB_2
+inpC_0
+inpC_3
+#
+GSCLib CLKBUFX3 symbol
+clk__L1_I0
+#ISCELL
+lab3 ipin symbol
+I6
+I15
+I0
+I5
+I10
+I1
+I4
+I12
+I14
+I13
+I16
+I9
+I7
+I8
+I11
+I2
+I3
+#ISCELL
+lab3 opin symbol
+I26
+I18
+I21
+I19
+I29
+I30
+I23
+I27
+I22
+I25
+I31
+I24
+I20
+I32
+I28
+I17
+#ISCELL
+basic ipin symbol
+PIN1
+PIN0

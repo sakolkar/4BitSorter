@@ -1,0 +1,122 @@
+@(#)$CDS: LVS.exe version 5.1.0 06/08/2010 11:04 (cicln04) $
+
+Command line: /CMC/EDA/tools/cadence/IC5141USR6_2010/tools.lnx86/dfII/bin/32bit/LVS.exe -dir /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Cadence/LVS -l -t /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Cadence/LVS/layout /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Cadence/LVS/schematic
+Like matching is enabled.
+Using terminal names as correspondence points.
+
+ GENERIC PDK LVS Rules
+
+    Net-list summary for /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Cadence/LVS/layout/netlist
+       count
+	2762		nets
+	35		terminals
+	3464		pmos
+	3462		nmos
+	51		polyres
+
+    Net-list summary for /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Cadence/LVS/schematic/netlist
+       count
+	2762		nets
+	35		terminals
+	2567		pmos
+	2551		nmos
+	51		polyres
+
+
+    Terminal correspondence points
+    N894      N1        GRND
+    N2667     N0        POWR
+    N1363     N25       padA_0_
+    N1846     N44       padA_1_
+    N1356     N19       padA_2_
+    N2718     N42       padA_3_
+    N2275     N30       padB_0_
+    N2127     N40       padB_1_
+    N1919     N32       padB_2_
+    N1582     N52       padB_3_
+    N2083     N10       padC_0_
+    N349      N18       padC_1_
+    N1343     N7        padC_2_
+    N583      N26       padC_3_
+    N319      N64       padClk
+    N1178     N70       padD_0_
+    N1847     N46       padD_1_
+    N2728     N45       padD_2_
+    N2125     N37       padD_3_
+    N593      N36       padS1reg_0_
+    N1407     N54       padS1reg_1_
+    N2017     N28       padS1reg_2_
+    N445      N43       padS1reg_3_
+    N1595     N61       padS2reg_0_
+    N487      N15       padS2reg_1_
+    N596      N41       padS2reg_2_
+    N1733     N22       padS2reg_3_
+    N706      N59       padS3reg_0_
+    N1883     N67       padS3reg_1_
+    N2361     N27       padS3reg_2_
+    N1091     N11       padS3reg_3_
+    N222      N50       padS4reg_0_
+    N1131     N35       padS4reg_1_
+    N2025     N34       padS4reg_2_
+    N2677     N68       padS4reg_3_
+
+Devices in the rules but not in the netlist:
+        nplusres nmoscap mimcap vpnp npn pnp inductor ndio pdio cds_thru
+
+The net-lists match.
+
+			     layout  schematic
+				instances
+	un-matched		0	0
+	rewired			0	0
+	size errors		0	0
+	pruned			0	0
+	active			6977	5169
+	total			6977	5169
+
+				  nets
+	un-matched		0	0
+	merged			0	0
+	pruned			0	0
+	active			2762	2762
+	total			2762	2762
+
+				terminals
+	un-matched		0	0
+	matched but
+	different type		0	0
+	total			35	35
+
+
+Probe files from /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Cadence/LVS/schematic
+
+devbad.out:
+
+netbad.out:
+
+mergenet.out:
+
+termbad.out:
+
+prunenet.out:
+
+prunedev.out:
+
+audit.out:
+
+
+Probe files from /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Cadence/LVS/layout
+
+devbad.out:
+
+netbad.out:
+
+mergenet.out:
+
+termbad.out:
+
+prunenet.out:
+
+prunedev.out:
+
+audit.out:

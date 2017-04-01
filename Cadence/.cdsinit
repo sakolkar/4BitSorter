@@ -1,0 +1,2 @@
+hiSetBindKey("Command Interpreter" "<Key>F6" "ddsOpenLibManager()");
+loadi("/EDA/scripts/cadence_keybind.il");

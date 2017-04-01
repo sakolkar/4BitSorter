@@ -2,22 +2,22 @@ m255
 K3
 13
 cModel Technology
-Z0 d/afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis
+Z0 d/afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis-2
 T_opt
-V_:3Tz_j_6c[_zEO5zllD<0
+V9hT]e>iX^b?m1b^gUfn]V2
 Z1 04 9 8 work sorter_tb behavior 1
-Z2 =1-d8cb8a4252e9-58bf3932-ad31a-14ec
+Z2 =1-d8cb8a4251dc-58dad005-31896-2ef3
 Z3 o-quiet -auto_acc_if_foreign -work work
 Z4 n@_opt
 Z5 OL;O;6.5b;42
 Epdo12cdg
-Z6 w1141941466
+Z6 w1490733375
 Z7 DPx4 ieee 15 std_logic_arith 0 22 GJbAT?7@hRQU9IQ702DT]2
 Z8 DPx4 ieee 18 std_logic_unsigned 0 22 hEMVMlaNCR^<OOoVNV;m90
 Z9 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
 Z10 DPx3 std 6 textio 0 22 m2KQDRRhmF833<<DjYdL70
-Z11 8/afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis/PDO12CDG.vhd
-Z12 F/afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis/PDO12CDG.vhd
+Z11 8/afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis-2/PDO12CDG.vhd
+Z12 F/afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis-2/PDO12CDG.vhd
 l0
 L7
 Z13 V@?zm]]7lXN9HKPHG?cW:W0
@@ -50,8 +50,8 @@ R7
 R8
 R9
 R10
-Z25 8/afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis/PDUDGZ.vhd
-Z26 F/afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis/PDUDGZ.vhd
+Z25 8/afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis-2/PDUDGZ.vhd
+Z26 F/afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis-2/PDUDGZ.vhd
 l0
 L7
 Z27 V:G5C0ko[0eiALeTK>XcBC1
@@ -79,59 +79,59 @@ R15
 R16
 Z31 !s100 d^CQmnWEfQdz`OF_H>zVJ0
 Esorter
-Z32 w1488921159
+R6
 R8
 R7
 R9
-Z33 8/afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis/sorter.vhd
-Z34 F/afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis/sorter.vhd
+Z32 8/afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis-2/sorter.vhd
+Z33 F/afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis-2/sorter.vhd
 l0
 L14
-Z35 V4FCSnO_UeD^H:KB;In6ao0
+Z34 V4FCSnO_UeD^H:KB;In6ao0
 R14
 32
 R15
 R16
-Z36 !s100 l:3FFU0mL7TkCgk^SQ^?O0
+Z35 !s100 l:3FFU0mL7TkCgk^SQ^?O0
 Artl
 R8
 R7
 R9
-Z37 DEx4 work 6 sorter 0 22 4FCSnO_UeD^H:KB;In6ao0
-l45
+Z36 DEx4 work 6 sorter 0 22 4FCSnO_UeD^H:KB;In6ao0
+l48
 L28
-Z38 VLz84VO4n@SB7]<nH4^=H51
+Z37 Ve[>jhf9hlmj^OQ_XYmV>d1
 R14
 32
 R21
-Z39 Mx2 4 ieee 15 std_logic_arith
-Z40 Mx1 4 ieee 18 std_logic_unsigned
+Z38 Mx2 4 ieee 15 std_logic_arith
+Z39 Mx1 4 ieee 18 std_logic_unsigned
 R15
 R16
-Z41 !s100 CT;S@@_SkNUAae7nAYe>92
+Z40 !s100 l?z5[9`Qj[XMUP2=6T`Sc1
 Esorter_tb
-Z42 w1488926953
+Z41 w1490735085
 R7
 R8
 R9
-Z43 8/afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis/sorter_tb.vhd
-Z44 F/afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis/sorter_tb.vhd
+Z42 8/afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis-2/sorter_tb.vhd
+Z43 F/afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis-2/sorter_tb.vhd
 l0
-L12
-Z45 VBOCULK4=3mSSI[NFnVUgE3
+L13
+Z44 VBOCULK4=3mSSI[NFnVUgE3
 R14
 32
 R15
 R16
-Z46 !s100 RZZ4A>__GoHo^kdGg7NBg2
+Z45 !s100 ]f^S=KegMb_fDJ>zZEEDD1
 Abehavior
 R7
 R8
 R9
-Z47 DEx4 work 9 sorter_tb 0 22 BOCULK4=3mSSI[NFnVUgE3
-l36
-L15
-Z48 VfAeYC<E7T3ZMY=DT2=Ghb3
+Z46 DEx4 work 9 sorter_tb 0 22 BOCULK4=3mSSI[NFnVUgE3
+l37
+L16
+Z47 Vz`hggZlKf6<7aoWagTE421
 R14
 32
 R21
@@ -139,30 +139,30 @@ R22
 R23
 R15
 R16
-Z49 !s100 59:2RLSOnn9UTePjkKgAI3
+Z48 !s100 d=S_hn<dSMz`nP`D[NNA50
 Esorter_top
-Z50 w1488924145
+R6
 R7
 R8
 R9
-Z51 8/afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis/sorter_top.vhd
-Z52 F/afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis/sorter_top.vhd
+Z49 8/afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis-2/sorter_top.vhd
+Z50 F/afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis-2/sorter_top.vhd
 l0
 L12
-Z53 V2UjIZz^ag2g05=MI?5ebL3
+Z51 V2UjIZz^ag2g05=MI?5ebL3
 R14
 32
 R15
 R16
-Z54 !s100 j75k4z7LH<cMlV07PL?:N2
+Z52 !s100 j75k4z7LH<cMlV07PL?:N2
 Astructure
 R7
 R8
 R9
-Z55 DEx4 work 10 sorter_top 0 22 2UjIZz^ag2g05=MI?5ebL3
+Z53 DEx4 work 10 sorter_top 0 22 2UjIZz^ag2g05=MI?5ebL3
 l49
 L20
-Z56 V4NM0J3A>8TY>cJfEEGaZa1
+Z54 VZO9mbMm_b0c0dzNEc8]R=2
 R14
 32
 R21
@@ -170,4 +170,4 @@ R22
 R23
 R15
 R16
-Z57 !s100 9MaERAVSCUo>NSeK_Ng:M1
+Z55 !s100 9I;84DPZon[HU3fK_QA?l0

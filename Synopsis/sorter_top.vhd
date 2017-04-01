@@ -62,31 +62,31 @@ begin
     -- Input C pad mapping
     padCGen: for i in 3 downto 0 generate
         begin
-            inpA: PDUDGZ port map (Y => C(i), PAD => padC(i));   
+            inpC: PDUDGZ port map (Y => C(i), PAD => padC(i));   
         end generate;
 
     -- Input D pad mapping
     padDGen: for i in 3 downto 0 generate
         begin
-            inpB: PDUDGZ port map (Y => D(i), PAD => padD(i));
+            inpD: PDUDGZ port map (Y => D(i), PAD => padD(i));
         end generate;
 
     -- Output result pad mapping
     padS1Gen: for i in 3 downto 0 generate
         begin
-            opRes: PDO12CDG port map (PAD => padS1reg(i), A => S1reg(i));
+            opResS1: PDO12CDG port map (PAD => padS1reg(i), A => S1reg(i));
         end generate;
     padS2Gen: for i in 3 downto 0 generate
         begin
-            opRes: PDO12CDG port map (PAD => padS2reg(i), A => S2reg(i));
+            opResS2: PDO12CDG port map (PAD => padS2reg(i), A => S2reg(i));
         end generate;
     padS3Gen: for i in 3 downto 0 generate
         begin
-            opRes: PDO12CDG port map (PAD => padS3reg(i), A => S3reg(i));
+            opResS3: PDO12CDG port map (PAD => padS3reg(i), A => S3reg(i));
         end generate;
     padS4Gen: for i in 3 downto 0 generate
         begin
-            opRes: PDO12CDG port map (PAD => padS4reg(i), A => S4reg(i));
+            opResS4: PDO12CDG port map (PAD => padS4reg(i), A => S4reg(i));
         end generate;
 
     -- Misc pad mapping

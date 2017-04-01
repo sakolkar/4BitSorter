@@ -8,7 +8,8 @@
 # //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
 # //  AND IS SUBJECT TO LICENSE TERMS.
 # //
-vcom -reportprogress 300 -work work /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis/PDO12CDG.vhd
+vlib work
+vcom -reportprogress 300 -work work /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis-2/PDO12CDG.vhd
 # Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
 # -- Loading package standard
 # -- Loading package textio
@@ -17,7 +18,7 @@ vcom -reportprogress 300 -work work /afs/ualberta.ca/home/a/k/akolkar/ece403-lab
 # -- Loading package std_logic_unsigned
 # -- Compiling entity pdo12cdg
 # -- Compiling architecture outpad_arc of pdo12cdg
-vcom -reportprogress 300 -work work /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis/PDUDGZ.vhd
+vcom -reportprogress 300 -work work /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis-2/PDUDGZ.vhd
 # Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
 # -- Loading package standard
 # -- Loading package textio
@@ -26,7 +27,7 @@ vcom -reportprogress 300 -work work /afs/ualberta.ca/home/a/k/akolkar/ece403-lab
 # -- Loading package std_logic_unsigned
 # -- Compiling entity pdudgz
 # -- Compiling architecture inpad_arc of pdudgz
-vcom -reportprogress 300 -work work /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis/sorter.vhd
+vcom -reportprogress 300 -work work /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis-2/sorter.vhd
 # Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
 # -- Loading package standard
 # -- Loading package std_logic_1164
@@ -34,7 +35,15 @@ vcom -reportprogress 300 -work work /afs/ualberta.ca/home/a/k/akolkar/ece403-lab
 # -- Loading package std_logic_unsigned
 # -- Compiling entity sorter
 # -- Compiling architecture rtl of sorter
-vcom -reportprogress 300 -work work /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis/sorter_top.vhd
+vcom -reportprogress 300 -work work /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis-2/sorter_tb.vhd
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity sorter_tb
+# -- Compiling architecture behavior of sorter_tb
+vcom -reportprogress 300 -work work /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis-2/sorter_top.vhd
 # Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
 # -- Loading package standard
 # -- Loading package std_logic_1164
@@ -42,21 +51,14 @@ vcom -reportprogress 300 -work work /afs/ualberta.ca/home/a/k/akolkar/ece403-lab
 # -- Loading package std_logic_unsigned
 # -- Compiling entity sorter_top
 # -- Compiling architecture structure of sorter_top
-vcom -reportprogress 300 -work work /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis/sorter_tb.vhd
-# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity sorter_tb
-# -- Compiling architecture behavior of sorter_tb
 vsim work.sorter_tb
 # vsim work.sorter_tb 
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vsim-3812) Design is being optimized...
 # Loading std.standard
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.std_logic_arith(body)
-# Loading work.sorter_tb(behavior)#1
 # Loading ieee.std_logic_unsigned(body)
+# Loading work.sorter_tb(behavior)#1
 # Loading std.textio(body)
 # Loading work.sorter_top(structure)#1
 run
@@ -141,44 +143,43 @@ run
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 15 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 4  Instance: /sorter_tb/uut/coreg
+#    Time: 45 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 4  Instance: /sorter_tb/uut/coreg
+#    Time: 45 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 4  Instance: /sorter_tb/uut/coreg
+#    Time: 45 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 4  Instance: /sorter_tb/uut/coreg
+#    Time: 45 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 5  Instance: /sorter_tb/uut/coreg
+#    Time: 75 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 5  Instance: /sorter_tb/uut/coreg
+#    Time: 75 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 5  Instance: /sorter_tb/uut/coreg
+#    Time: 75 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 5  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 5  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 5  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 7  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 7  Instance: /sorter_tb/uut/coreg
-vcom -reportprogress 300 -work work /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis/sorter_tb.vhd
-# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity sorter_tb
-# -- Compiling architecture behavior of sorter_tb
+#    Time: 75 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
+add wave \
+{sim:/sorter_tb/clk } \
+{sim:/sorter_tb/a } \
+{sim:/sorter_tb/b } \
+{sim:/sorter_tb/c } \
+{sim:/sorter_tb/d } \
+{sim:/sorter_tb/s1reg } \
+{sim:/sorter_tb/s2reg } \
+{sim:/sorter_tb/s3reg } \
+{sim:/sorter_tb/s4reg } 
+run
+run -all
+# Break key hit 
+# Break in ForLoop loop at /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis-2/sorter_tb.vhd line 58
+run
 vsim work.sorter_tb
 # vsim work.sorter_tb 
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # Loading std.standard
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.std_logic_arith(body)
-# Loading work.sorter_tb(behavior)#1
 # Loading ieee.std_logic_unsigned(body)
+# Loading work.sorter_tb(behavior)#1
 # Loading std.textio(body)
 # Loading work.sorter_top(structure)#1
 run
@@ -263,336 +264,59 @@ run
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 15 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 4  Instance: /sorter_tb/uut/coreg
+#    Time: 45 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 4  Instance: /sorter_tb/uut/coreg
+#    Time: 45 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 4  Instance: /sorter_tb/uut/coreg
+#    Time: 45 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 4  Instance: /sorter_tb/uut/coreg
+#    Time: 45 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 5  Instance: /sorter_tb/uut/coreg
+#    Time: 75 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 5  Instance: /sorter_tb/uut/coreg
+#    Time: 75 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 5  Instance: /sorter_tb/uut/coreg
+#    Time: 75 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 5  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 5  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 5  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 5  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 5  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 6  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 6  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 6  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 6  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 7  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 7  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 7  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 7  Instance: /sorter_tb/uut/coreg
-run
-add wave -r sim:/sorter_tb/*
-add wave sim:/sorter_tb/*
-run
-vcom -reportprogress 300 -work work /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis/sorter_tb.vhd
+#    Time: 75 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
+add wave \
+{sim:/sorter_tb/clk } \
+{sim:/sorter_tb/a } \
+{sim:/sorter_tb/b } \
+{sim:/sorter_tb/c } \
+{sim:/sorter_tb/d } \
+{sim:/sorter_tb/s1reg } \
+{sim:/sorter_tb/s2reg } \
+{sim:/sorter_tb/s3reg } \
+{sim:/sorter_tb/s4reg } 
+run -next
+vcom -reportprogress 300 -work work /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis-2/PDO12CDG.vhd
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package textio
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity pdo12cdg
+# -- Compiling architecture outpad_arc of pdo12cdg
+vcom -reportprogress 300 -work work /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis-2/PDUDGZ.vhd
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package textio
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity pdudgz
+# -- Compiling architecture inpad_arc of pdudgz
+vcom -reportprogress 300 -work work /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis-2/sorter.vhd
 # Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
 # -- Loading package standard
 # -- Loading package std_logic_1164
 # -- Loading package std_logic_arith
-# -- Compiling entity sorter_tb
-# -- Compiling architecture behavior of sorter_tb
-# Load canceled
-run
-vsim work.sorter_tb
-# vsim work.sorter_tb 
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading std.standard
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.std_logic_arith(body)
-# Loading work.sorter_tb(behavior)#1
-# Loading ieee.std_logic_unsigned(body)
-# Loading std.textio(body)
-# Loading work.sorter_top(structure)#1
-# Load canceled
-run
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 4  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 4  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 4  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 4  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 5  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 5  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 5  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 5  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 5  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 5  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 7  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 7  Instance: /sorter_tb/uut/coreg
-add wave sim:/sorter_tb/*
-run
-run
-vcom -reportprogress 300 -work work /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis/sorter_tb.vhd
-# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity sorter_tb
-# -- Compiling architecture behavior of sorter_tb
-run
-vsim work.sorter_tb
-# vsim work.sorter_tb 
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading std.standard
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.std_logic_arith(body)
-# Loading work.sorter_tb(behavior)#1
-# Loading ieee.std_logic_unsigned(body)
-# Loading std.textio(body)
-# Loading work.sorter_top(structure)#1
-add wave sim:/sorter_tb/*
-run
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 4  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 4  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 4  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 4  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 5  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 5  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 5  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 5  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 5  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 5  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 5  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 5  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 6  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 6  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 6  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 6  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 7  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 7  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 7  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 7  Instance: /sorter_tb/uut/coreg
-run
-vcom -reportprogress 300 -work work /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis/sorter_tb.vhd
-# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Compiling entity sorter_tb
-# -- Compiling architecture behavior of sorter_tb
-# ** Error: /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis/sorter_tb.vhd(58): No feasible entries for infix operator "+".
-# ** Error: /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis/sorter_tb.vhd(58): Type error resolving infix expression "+" as type ieee.std_logic_1164.std_logic_vector.
-# ** Error: /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis/sorter_tb.vhd(60): No feasible entries for infix operator "+".
-# ** Error: /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis/sorter_tb.vhd(60): Type error resolving infix expression "+" as type ieee.std_logic_1164.std_logic_vector.
-# ** Error: /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis/sorter_tb.vhd(62): No feasible entries for infix operator "+".
-# ** Error: /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis/sorter_tb.vhd(62): Type error resolving infix expression "+" as type ieee.std_logic_1164.std_logic_vector.
-# ** Error: /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis/sorter_tb.vhd(64): No feasible entries for infix operator "+".
-# ** Error: /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis/sorter_tb.vhd(64): Type error resolving infix expression "+" as type ieee.std_logic_1164.std_logic_vector.
-# ** Warning: [2] /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis/sorter_tb.vhd(67): (vcom-1090) Possible infinite loop: Process contains no WAIT statement.
-# ** Error: /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis/sorter_tb.vhd(68): VHDL Compiler exiting
-vcom -reportprogress 300 -work work /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis/sorter_tb.vhd
+# -- Loading package std_logic_unsigned
+# -- Compiling entity sorter
+# -- Compiling architecture rtl of sorter
+vcom -reportprogress 300 -work work /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis-2/sorter_tb.vhd
 # Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
 # -- Loading package standard
 # -- Loading package std_logic_1164
@@ -600,8 +324,46 @@ vcom -reportprogress 300 -work work /afs/ualberta.ca/home/a/k/akolkar/ece403-lab
 # -- Loading package std_logic_unsigned
 # -- Compiling entity sorter_tb
 # -- Compiling architecture behavior of sorter_tb
-# ** Warning: [2] /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis/sorter_tb.vhd(68): (vcom-1090) Possible infinite loop: Process contains no WAIT statement.
-vcom -reportprogress 300 -work work /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis/sorter_tb.vhd
+# ** Error: /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis-2/sorter_tb.vhd(56): near "5": expecting ';'
+# ** Error: /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis-2/sorter_tb.vhd(57): near "5": expecting ';'
+# ** Error: /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis-2/sorter_tb.vhd(58): near "5": expecting ';'
+# ** Error: /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis-2/sorter_tb.vhd(59): near "3": expecting ';'
+# ** Error: /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis-2/sorter_tb.vhd(62): VHDL Compiler exiting
+vcom -reportprogress 300 -work work /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis-2/sorter_top.vhd
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity sorter_top
+# -- Compiling architecture structure of sorter_top
+vcom -reportprogress 300 -work work /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis-2/PDO12CDG.vhd
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package textio
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity pdo12cdg
+# -- Compiling architecture outpad_arc of pdo12cdg
+vcom -reportprogress 300 -work work /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis-2/PDUDGZ.vhd
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package textio
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity pdudgz
+# -- Compiling architecture inpad_arc of pdudgz
+vcom -reportprogress 300 -work work /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis-2/sorter.vhd
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity sorter
+# -- Compiling architecture rtl of sorter
+vcom -reportprogress 300 -work work /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis-2/sorter_tb.vhd
 # Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
 # -- Loading package standard
 # -- Loading package std_logic_1164
@@ -609,15 +371,14 @@ vcom -reportprogress 300 -work work /afs/ualberta.ca/home/a/k/akolkar/ece403-lab
 # -- Loading package std_logic_unsigned
 # -- Compiling entity sorter_tb
 # -- Compiling architecture behavior of sorter_tb
-# Load canceled
-vcom -reportprogress 300 -work work /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis/sorter_tb.vhd
+vcom -reportprogress 300 -work work /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis-2/sorter_top.vhd
 # Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
 # -- Loading package standard
 # -- Loading package std_logic_1164
 # -- Loading package std_logic_arith
 # -- Loading package std_logic_unsigned
-# -- Compiling entity sorter_tb
-# -- Compiling architecture behavior of sorter_tb
+# -- Compiling entity sorter_top
+# -- Compiling architecture structure of sorter_top
 vsim work.sorter_tb
 # vsim work.sorter_tb 
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
@@ -710,29 +471,682 @@ run
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 15 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 4  Instance: /sorter_tb/uut/coreg
+#    Time: 45 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 4  Instance: /sorter_tb/uut/coreg
+#    Time: 45 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 4  Instance: /sorter_tb/uut/coreg
+#    Time: 45 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 4  Instance: /sorter_tb/uut/coreg
+#    Time: 45 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 5  Instance: /sorter_tb/uut/coreg
+#    Time: 75 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 5  Instance: /sorter_tb/uut/coreg
+#    Time: 75 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 5  Instance: /sorter_tb/uut/coreg
+#    Time: 75 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 5  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 5  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 5  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 7  Instance: /sorter_tb/uut/coreg
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 15 ns  Iteration: 7  Instance: /sorter_tb/uut/coreg
-add wave sim:/sorter_tb/*
+#    Time: 75 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
+add wave \
+{sim:/sorter_tb/clk } \
+{sim:/sorter_tb/a } \
+{sim:/sorter_tb/b } \
+{sim:/sorter_tb/c } \
+{sim:/sorter_tb/d } \
+{sim:/sorter_tb/s1reg } \
+{sim:/sorter_tb/s2reg } \
+{sim:/sorter_tb/s3reg } \
+{sim:/sorter_tb/s4reg } 
 run
 run
+run
+run
+run
+run
+run
+run
+vsim work.sorter_tb
+# vsim work.sorter_tb 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.sorter_tb(behavior)#1
+# Loading std.textio(body)
+# Loading work.sorter_top(structure)#1
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 15 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 15 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 15 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 15 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 45 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 45 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 45 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 45 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 75 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 75 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 75 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 75 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
+vsim work.sorter_tb
+# vsim work.sorter_tb 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.sorter_tb(behavior)#1
+# Loading std.textio(body)
+# Loading work.sorter_top(structure)#1
+vcom -reportprogress 300 -work work /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis-2/PDO12CDG.vhd
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package textio
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity pdo12cdg
+# -- Compiling architecture outpad_arc of pdo12cdg
+vcom -reportprogress 300 -work work /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis-2/PDUDGZ.vhd
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package textio
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity pdudgz
+# -- Compiling architecture inpad_arc of pdudgz
+vcom -reportprogress 300 -work work /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis-2/sorter.vhd
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity sorter
+# -- Compiling architecture rtl of sorter
+vcom -reportprogress 300 -work work /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis-2/sorter_tb.vhd
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity sorter_tb
+# -- Compiling architecture behavior of sorter_tb
+vcom -reportprogress 300 -work work /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis-2/sorter_top.vhd
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity sorter_top
+# -- Compiling architecture structure of sorter_top
+vsim work.sorter_tb
+# vsim work.sorter_tb 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.sorter_tb(behavior)#1
+# Loading std.textio(body)
+# Loading work.sorter_top(structure)#1
+# Break key hit 
+# Break key hit 
+quit -sim
+vsim work.sorter_tb
+# vsim work.sorter_tb 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.sorter_tb(behavior)#1
+# Loading std.textio(body)
+# Loading work.sorter_top(structure)#1
+add wave \
+{sim:/sorter_tb/clk } \
+{sim:/sorter_tb/a } \
+{sim:/sorter_tb/b } \
+{sim:/sorter_tb/c } \
+{sim:/sorter_tb/d } \
+{sim:/sorter_tb/s1reg } \
+{sim:/sorter_tb/s2reg } \
+{sim:/sorter_tb/s3reg } \
+{sim:/sorter_tb/s4reg } 
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 15 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 15 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 15 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 15 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 45 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 45 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 45 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 45 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 75 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 75 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 75 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 75 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
+add wave \
+{sim:/sorter_tb/clk } \
+{sim:/sorter_tb/a } \
+{sim:/sorter_tb/b } \
+{sim:/sorter_tb/c } \
+{sim:/sorter_tb/d } \
+{sim:/sorter_tb/s1reg } \
+{sim:/sorter_tb/s2reg } \
+{sim:/sorter_tb/s3reg } \
+{sim:/sorter_tb/s4reg } 
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+vcom -reportprogress 300 -work work /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis-2/PDO12CDG.vhd
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package textio
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity pdo12cdg
+# -- Compiling architecture outpad_arc of pdo12cdg
+vcom -reportprogress 300 -work work /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis-2/PDUDGZ.vhd
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package textio
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity pdudgz
+# -- Compiling architecture inpad_arc of pdudgz
+vcom -reportprogress 300 -work work /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis-2/sorter.vhd
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity sorter
+# -- Compiling architecture rtl of sorter
+vcom -reportprogress 300 -work work /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis-2/sorter_tb.vhd
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity sorter_tb
+# -- Compiling architecture behavior of sorter_tb
+vsim work.sorter_tb
+# vsim work.sorter_tb 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.sorter_tb(behavior)#1
+# Loading std.textio(body)
+# Loading work.sorter_top(structure)#1
+add wave \
+{sim:/sorter_tb/uut/a } \
+{sim:/sorter_tb/uut/b } \
+{sim:/sorter_tb/uut/c } \
+{sim:/sorter_tb/uut/d } \
+{sim:/sorter_tb/uut/s1reg } \
+{sim:/sorter_tb/uut/s2reg } \
+{sim:/sorter_tb/uut/s3reg } \
+{sim:/sorter_tb/uut/s4reg } \
+{sim:/sorter_tb/uut/clk } 
+add wave \
+{sim:/sorter_tb/uut/a } \
+{sim:/sorter_tb/uut/b } \
+{sim:/sorter_tb/uut/c } \
+{sim:/sorter_tb/uut/d } \
+{sim:/sorter_tb/uut/s1reg } \
+{sim:/sorter_tb/uut/s2reg } \
+{sim:/sorter_tb/uut/s3reg } \
+{sim:/sorter_tb/uut/s4reg } \
+{sim:/sorter_tb/uut/clk } 
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 15 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 15 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 15 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 15 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 45 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 45 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 45 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 45 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 75 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 75 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 75 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 75 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
+add wave \
+{sim:/sorter_tb/uut/a } \
+{sim:/sorter_tb/uut/b } \
+{sim:/sorter_tb/uut/c } \
+{sim:/sorter_tb/uut/d } \
+{sim:/sorter_tb/uut/s1reg } \
+{sim:/sorter_tb/uut/s2reg } \
+{sim:/sorter_tb/uut/s3reg } \
+{sim:/sorter_tb/uut/s4reg } \
+{sim:/sorter_tb/uut/clk } 
+run
+run
+# Load canceled
+vcom -reportprogress 300 -work work /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis-2/PDO12CDG.vhd
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package textio
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity pdo12cdg
+# -- Compiling architecture outpad_arc of pdo12cdg
+vcom -reportprogress 300 -work work /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis-2/PDUDGZ.vhd
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package textio
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity pdudgz
+# -- Compiling architecture inpad_arc of pdudgz
+vcom -reportprogress 300 -work work /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis-2/sorter.vhd
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity sorter
+# -- Compiling architecture rtl of sorter
+vcom -reportprogress 300 -work work /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis-2/sorter_tb.vhd
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity sorter_tb
+# -- Compiling architecture behavior of sorter_tb
+vcom -reportprogress 300 -work work /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Synopsis-2/sorter_top.vhd
+# Model Technology ModelSim SE-64 vcom 6.5b Compiler 2009.05 May 21 2009
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity sorter_top
+# -- Compiling architecture structure of sorter_top
+vsim work.sorter_tb
+# vsim work.sorter_tb 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.sorter_tb(behavior)#1
+# Loading std.textio(body)
+# Loading work.sorter_top(structure)#1
+add wave \
+{sim:/sorter_tb/clk } \
+{sim:/sorter_tb/a } \
+{sim:/sorter_tb/b } \
+{sim:/sorter_tb/c } \
+{sim:/sorter_tb/d } \
+{sim:/sorter_tb/s1reg } \
+{sim:/sorter_tb/s2reg } \
+{sim:/sorter_tb/s3reg } \
+{sim:/sorter_tb/s4reg } 
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 15 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 15 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 15 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 15 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 45 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 45 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 45 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 45 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 75 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 75 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 75 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 75 ns  Iteration: 3  Instance: /sorter_tb/uut/coreg
+run
+run
+run
+run
+run
+# error writing "file17": broken pipe

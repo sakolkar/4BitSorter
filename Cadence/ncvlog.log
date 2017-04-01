@@ -1,0 +1,98 @@
+ncvlog: *W,DLNOHV: Unable to find an 'hdl.var' file to load in.
+TOOL:	ncvlog	05.50-E115: Started on Mar 31, 2017 at 17:53:12 MDT
+ncvlog
+    -use5x
+    -ESCAPEDNAME
+    -work __nclib
+    -view module
+    -logfile ncvlog.log
+    -cdslib /tmp/ihdl_cdsliba5148_5148
+    -messages
+    -nostdout
+    -nocopyright
+    sorter_top.v
+
+file: sorter_top.v
+	module __nclib.ADDFX1:module
+		errors: 0, warnings: 0
+	module __nclib.ADDHX1:module
+		errors: 0, warnings: 0
+	module __nclib.AND2X1:module
+		errors: 0, warnings: 0
+	module __nclib.AOI21X1:module
+		errors: 0, warnings: 0
+	module __nclib.AOI22X1:module
+		errors: 0, warnings: 0
+	module __nclib.BUFX1:module
+		errors: 0, warnings: 0
+	module __nclib.BUFX3:module
+		errors: 0, warnings: 0
+	module __nclib.CLKBUFX1:module
+		errors: 0, warnings: 0
+	module __nclib.CLKBUFX2:module
+		errors: 0, warnings: 0
+	module __nclib.CLKBUFX3:module
+		errors: 0, warnings: 0
+	module __nclib.DFFSRX1:module
+		errors: 0, warnings: 0
+	module __nclib.DFFX1:module
+		errors: 0, warnings: 0
+	module __nclib.INVX1:module
+		errors: 0, warnings: 0
+	module __nclib.INVX2:module
+		errors: 0, warnings: 0
+	module __nclib.INVX4:module
+		errors: 0, warnings: 0
+	module __nclib.INVX8:module
+		errors: 0, warnings: 0
+	module __nclib.MX2X1:module
+		errors: 0, warnings: 0
+	module __nclib.NAND2X1:module
+		errors: 0, warnings: 0
+	module __nclib.NAND2X2:module
+		errors: 0, warnings: 0
+	module __nclib.NAND3X1:module
+		errors: 0, warnings: 0
+	module __nclib.NAND4X1:module
+		errors: 0, warnings: 0
+	module __nclib.NOR2X1:module
+		errors: 0, warnings: 0
+	module __nclib.NOR3X1:module
+		errors: 0, warnings: 0
+	module __nclib.NOR4X1:module
+		errors: 0, warnings: 0
+	module __nclib.OAI21X1:module
+		errors: 0, warnings: 0
+	module __nclib.OAI22X1:module
+		errors: 0, warnings: 0
+	module __nclib.OAI33X1:module
+		errors: 0, warnings: 0
+	module __nclib.OR2X1:module
+		errors: 0, warnings: 0
+	module __nclib.OR4X1:module
+		errors: 0, warnings: 0
+	module __nclib.SDFFSRX1:module
+		errors: 0, warnings: 0
+	module __nclib.TBUFX1:module
+		errors: 0, warnings: 0
+	module __nclib.TBUFX2:module
+		errors: 0, warnings: 0
+	module __nclib.TBUFX4:module
+		errors: 0, warnings: 0
+	module __nclib.TBUFX8:module
+		errors: 0, warnings: 0
+	module __nclib.TINVX1:module
+		errors: 0, warnings: 0
+	module __nclib.TLATSRX1:module
+		errors: 0, warnings: 0
+	module __nclib.TLATX1:module
+		errors: 0, warnings: 0
+	module __nclib.XOR2X1:module
+		errors: 0, warnings: 0
+	module __nclib.sorter:module
+		errors: 0, warnings: 0
+	module __nclib.sorter_top:module
+		errors: 0, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+TOOL:	ncvlog	05.50-E115: Exiting on Mar 31, 2017 at 17:53:12 MDT  (total: 00:00:00)

@@ -1,0 +1,42 @@
+# Original Author Paul Greidanus
+# Current maintainer Nancy Minderman
+# nem@ece.ualberta.ca
+# September 20, 2006
+# This script sets up the environment for running icfb
+# The Cadence icfb program is run automatically at the end of the script
+
+# September 20th, 2006
+# Added section for the .cdsplotinit file
+
+# January 22, 2008
+# Added display.drf
+# Created this script based on the start.gpdk180 script specifically for ee453
+
+# December 2010
+# Modified source line to include the ee453 specific cadence shell script
+
+#!/bin/bash
+
+if [ ! -f .cdsinit ] ; then
+	echo -e "hiSetBindKey(\x22Command Interpreter\x22 \x22\x3cKey\x3eF6\x22 \x22ddsOpenLibManager()\x22);" > .cdsinit
+	echo -e "loadi(\x22/EDA/scripts/cadence_keybind.il\x22);" >> .cdsinit
+fi
+
+if [ ! -f cds.lib ] ; then
+	echo "SOFTINCLUDE /EDA/kits/gpdk18/cds.lib" > cds.lib
+fi
+
+if [ ! -f $HOME/.cdsplotinit ] ; then
+	cp /EDA/scripts/cdsplotinit $HOME/.cdsplotinit
+fi
+
+if [ ! -f display.drf ] ; then
+	cp /EDA/kits/gpdk18/display.drf .
+fi
+
+source /EDA/scripts/cadence.ee453.sh
+export CDS_Netlisting_Mode=Analog
+export CDS_LOG_PATH="./"
+
+echo Starting Cadence
+icfb &

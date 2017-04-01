@@ -1,0 +1,135 @@
+ design_vision-xg-t> report_area
+ 
+****************************************
+Report : area
+Design : sorter_top
+Version: Y-2006.06-SP4
+Date   : Fri Mar 31 17:15:45 2017
+****************************************
+
+Library(s) Used:
+
+    GSCLib_2.0 (File: /EDA/kits/gpdk18/GSCLib_3.0/timing/GSCLib_3.0.db)
+    GSCLib_IO (File: /EDA/kits/gpdk18/GSCLib_IO_1.4/timing/GSCLib_IO.db)
+
+Number of ports:               33
+Number of nets:                66
+Number of cells:               34
+Number of references:           3
+
+Combinational area:       891000.000000
+Noncombinational area:       0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:          891000.000000
+Total area:                 undefined
+1
+design_vision-xg-t> report_power
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : sorter_top
+Version: Y-2006.06-SP4
+Date   : Fri Mar 31 17:16:26 2017
+****************************************
+
+
+Library(s) Used:
+
+    GSCLib_2.0 (File: /EDA/kits/gpdk18/GSCLib_3.0/timing/GSCLib_3.0.db)
+    GSCLib_IO (File: /EDA/kits/gpdk18/GSCLib_IO_1.4/timing/GSCLib_IO.db)
+
+
+Operating Conditions: typical   Library: GSCLib_2.0
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 3    
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  = 138.5800 mW   (98%)
+  Net Switching Power  =   3.3549 mW    (2%)
+                         ---------
+Total Dynamic Power    = 141.9350 mW  (100%)
+
+Cell Leakage Power     = 859.3408 uW
+
+1
+design_vision-xg-t> report_timing -path full -delay max -max_paths 1 -nworst 1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : sorter_top
+Version: Y-2006.06-SP4
+Date   : Fri Mar 31 17:16:55 2017
+****************************************
+
+Operating Conditions: typical   Library: GSCLib_2.0
+Wire Load Model Mode: top
+
+  Startpoint: coreG/R1_A_reg_0_
+              (rising edge-triggered flip-flop clocked by padClk)
+  Endpoint: coreG/R2_D_reg_3_
+            (rising edge-triggered flip-flop clocked by padClk)
+  Path Group: padClk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock padClk (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  coreG/R1_A_reg_0_/CK (SDFFSRX1)          0.00       0.00 r
+  coreG/R1_A_reg_0_/Q (SDFFSRX1)           0.31       0.31 r
+  coreG/U279/Y (NOR2X1)                    0.04       0.36 f
+  coreG/U280/Y (AND2X1)                    0.05       0.41 f
+  coreG/U281/Y (OAI22X1)                   0.12       0.53 r
+  coreG/U282/Y (OAI22X1)                   0.11       0.64 f
+  coreG/U283/Y (OAI21X1)                   0.02       0.66 r
+  coreG/U284/Y (OAI21X1)                   0.25       0.92 f
+  coreG/U6/Y (INVX8)                       0.08       0.99 r
+  coreG/U240/Y (AOI22X1)                   0.18       1.17 f
+  coreG/U175/Y (INVX8)                     0.05       1.22 r
+  coreG/U286/Y (NOR2X1)                    0.04       1.26 f
+  coreG/U287/Y (AND2X1)                    0.05       1.31 f
+  coreG/U288/Y (OAI22X1)                   0.12       1.44 r
+  coreG/U289/Y (OAI22X1)                   0.11       1.54 f
+  coreG/U290/Y (OAI21X1)                   0.02       1.57 r
+  coreG/U291/Y (OAI21X1)                   0.26       1.83 f
+  coreG/U7/Y (INVX8)                       0.08       1.90 r
+  coreG/U232/Y (AOI22X1)                   0.17       2.07 f
+  coreG/U147/Y (INVX8)                     0.04       2.12 r
+  coreG/U293/Y (NOR2X1)                    0.04       2.16 f
+  coreG/U294/Y (AND2X1)                    0.05       2.21 f
+  coreG/U295/Y (OAI22X1)                   0.12       2.33 r
+  coreG/U296/Y (OAI22X1)                   0.11       2.44 f
+  coreG/U297/Y (OAI21X1)                   0.02       2.46 r
+  coreG/U298/Y (OAI21X1)                   0.23       2.69 f
+  coreG/U167/Y (INVX8)                     0.07       2.76 r
+  coreG/U221/Y (OAI22X1)                   0.11       2.87 f
+  coreG/R2_D_reg_3_/D (SDFFSRX1)           0.00       2.87 f
+  data arrival time                                   2.87
+
+  clock padClk (rise edge)                 3.55       3.55
+  clock network delay (ideal)              0.00       3.55
+  coreG/R2_D_reg_3_/CK (SDFFSRX1)          0.00       3.55 r
+  library setup time                      -0.16       3.39
+  data required time                                  3.39
+  -----------------------------------------------------------
+  data required time                                  3.39
+  data arrival time                                  -2.87
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+1
+design_vision-xg-t> 

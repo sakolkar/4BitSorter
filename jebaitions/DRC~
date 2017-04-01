@@ -1,0 +1,667 @@
+\o Program:		@(#)$CDS: icfb.exe version 5.1.0 06/08/2010 11:08 (cicln04) $
+\o Hierarchy:		/CMC/EDA/tools/cadence/IC5141USR6_2010/tools.lnx86/dfII/
+\o Sub version:		sub-version 5.10.41.500.6.143 (32-bit addresses)
+\o Host name (type):	5013-w39 (x86_64)
+\o Operating system:	Linux 2.6.32-573.3.1.el6.x86_64 #1 SMP Thu Aug 13 12:55:33 CDT 2015
+\o X display name:	:0.0
+\o X server:		Scientific Linux
+\o Depth of Visual (Root):	24 (24)
+\o Number of Planes Used:	24
+\o X version:		11.0 (vendor release 11500000)
+\o Window Manager:	other
+\o User Name:		akolkar
+\o Working Directory:	5013-w39:/afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Cadence
+\o Process Id:		4863
+\o 
+\o COPYRIGHT © 1992-2009  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           © 1992-2009  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\p > 
+\o 8-bit PseudoColor Visual is not available (default Visual option).
+\o Using 24-bit TrueColor Visual.
+\o The program xdpyinfo can be used to verify the Visuals available
+\o for your display.
+\o Loading PRshare.cxt 
+\o Loading LVS.cxt 
+\o Loading layerProc.cxt 
+\o Loading ams.cxt 
+\o Loading acv.cxt 
+\o Loading auCore.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading seismic.cxt 
+\p > 
+\a ddsHiCreateLibrary()
+\p > 
+\a hiiSetCurrentForm('ddsCreateLibForm)
+\r t
+\a ddsCreateLibForm->LibName->value = "lab3"
+\r "lab3"
+\a ddsCreateLibForm->Option->value = "Attach to an existing techfile"
+\r "Attach to an existing techfile"
+\a hiFormDone(ddsCreateLibForm)
+\o Created library "lab3" as "/afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Cadence/lab3"
+\p > 
+\a hiiSetCurrentForm('tcNewLibAttachTechForm)
+\r t
+\a tcNewLibAttachTechForm->tcBinaryTFLibCyclic->value = "gpdk"
+\r "gpdk"
+\a hiiSetCurrentForm('ddsCreateLibForm)
+\r t
+\a hiiSetCurrentForm('tcNewLibAttachTechForm)
+\r t
+\a hiFormDone(tcNewLibAttachTechForm)
+\o Initializing diode.cbe from libInit.il for library gpdk...
+\o Initializing cap.cbe from libInit.il for library gpdk...
+\o Initializing ind.cbe from libInit.il for library gpdk...
+\o Initializing moscap.cbe from libInit.il for library gpdk...
+\o Initializing bjt.cbe from libInit.il for library gpdk...
+\o Initializing mos.cbe from libInit.il for library gpdk...
+\o Initializing vpnp.cbe from libInit.il for library gpdk...
+\o Initializing res.cbe from libInit.il for library gpdk...
+\o Initializing inhTerm.ile from libInit.il for library gpdk...
+\o Initializing utility.ile from libInit.il for library gpdk...
+\o Initializing mos.ile from libInit.il for library gpdk...
+\o Initializing addWire.ile from libInit.il for library gpdk...
+\o Initializing moscap.ile from libInit.il for library gpdk...
+\o Initializing subtie.ile from libInit.il for library gpdk...
+\o Initializing res.ile from libInit.il for library gpdk...
+\o Initializing ind.ile from libInit.il for library gpdk...
+\o Loading awv.cxt 
+\o Loading oasis.cxt 
+\o Loading analog.cxt 
+\o Loading asimenv.cxt 
+\o Loading spectrei.cxt 
+\o Design library 'lab3' successfully attached to technology library 'gpdk'.
+\r t
+\r t
+\r t
+\a prtDEFInCB()
+\o Loading lefdef.cxt 
+\p > 
+\a hiiSetCurrentForm('prtDEFInForm)
+\r t
+\a prtDEFInForm->adpDEFLibNameField->value = "lab3"
+\r "lab3"
+\a prtDEFInForm->adpDEFCellNameField->value = "sorter_top"
+\r "sorter_top"
+\a prtDEFInForm->adpDEFViewNameField->value = "layout"
+\r "layout"
+\a prtDEFInForm->adpDEFUseRefLibs->value =  t
+\r t
+\a prtDEFInForm->adpDEFRefLibNamesField->value = "GSCLib_IO"
+\r "GSCLib_IO"
+\a prtDEFInForm->adpDEFRefLibNamesField->value = "GSCLib_IO GSCLib"
+\r "GSCLib_IO GSCLib"
+\a prtDEFInForm->adpDEFFileNameField->value = "sorter_top.def"
+\r "sorter_top.def"
+\a hiFormDone(prtDEFInForm)
+\w *WARNING* Failed to open cellView "lab3 sorter_top layout" in mode "r".
+\o Creating cell view "lab3 sorter_top layout".
+\o 
+\o ********************************************************************************
+\o Product   : Virtuoso(R) DEF In
+\o Program   : @(#)$CDS: icfb.exe version 5.1.0 06/08/2010 11:08 (cicln04) $
+\o SubVersion: sub-version 5.10.41.500.6.143
+\o Started at: 31-Mar-2017  17:43:30
+\o User Name : akolkar
+\o Host Name : 5013-w39
+\o Directory : /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Cadence
+\o CADENCE Design Systems, Inc.
+\o ********************************************************************************
+\o *************************************************************
+\o *             Generic Standard Cell Library                 *
+\o *                                                           *
+\o * This library is provided as an education medium. It is    *
+\o * based upon the generic process available thru Cadence PDK *
+\o * factory in the GPDK Process Delivery Kit.                 *
+\o * Cadence shall in no case be liable for the contents of    *
+\o * this library.                                             *
+\o *                                                           *
+\o * GSCLib, v0.91, Oct 2002, Copyright Cadence Design Systems  *
+\o * This library can be freely distributed.                   *
+\o *                                                           *
+\o *************************************************************
+\o  
+\o Loading custom Skill for GSCLib....
+\w *WARNING* techOpenTechFile: unable to open file techfile.cds in library GSCLib_IO in r mode
+\o Processing VIAS Section
+\w *WARNING* dbOpenCellViewByType: Failed to open cellView (Via12Array_1 layout) from lib (gpdk) in 'r' mode because cellview does not exist.
+\w *WARNING* dbOpenCellViewByType: Failed to open cellView (Via12Array_2 layout) from lib (gpdk) in 'r' mode because cellview does not exist.
+\w *WARNING* dbOpenCellViewByType: Failed to open cellView (Via12Array_9 layout) from lib (gpdk) in 'r' mode because cellview does not exist.
+\w *WARNING* dbOpenCellViewByType: Failed to open cellView (Via12Array_10 layout) from lib (gpdk) in 'r' mode because cellview does not exist.
+\w *WARNING* dbOpenCellViewByType: Failed to open cellView (Via12Array_11 layout) from lib (gpdk) in 'r' mode because cellview does not exist.
+\w *WARNING* dbOpenCellViewByType: Failed to open cellView (Via12Array_12 layout) from lib (gpdk) in 'r' mode because cellview does not exist.
+\w *WARNING* dbOpenCellViewByType: Failed to open cellView (Via12Array_13 layout) from lib (gpdk) in 'r' mode because cellview does not exist.
+\w *WARNING* dbOpenCellViewByType: Failed to open cellView (Via12Array_14 layout) from lib (gpdk) in 'r' mode because cellview does not exist.
+\o Processing COMPONENTS Section
+\o Processing PINS Section
+\o Processing SPECIALNETS Section
+\o Processing NETS section
+\o DEFin: completed.
+\o 
+\o 
+\o Elapsed time 00:00:00 
+\r t
+\r t
+\a deOpen()
+\p > 
+\a hiiSetCurrentForm('deOpenForm)
+\r t
+\a hiFormDone(deOpenForm)
+\r t
+\o Loading le.cxt 
+\o Loading subx.cxt 
+\o Loading layers.cxt 
+\o =======Start Virtuoso Preview environment=======
+\o Loading asgUtil.cxt 
+\o Loading ADPshare.cxt 
+\o Loading FLutil.cxt 
+\o Loading techComp.cxt 
+\r window:2
+\a hiResizeWindow(window(2) list(120:185 1020:875))
+\r t
+\a hiResizeWindow(window(2) list(120:185 1020:875))
+\r t
+\a hiGetCurrentWindow()->stopLevel = 0
+\r 0
+\a hiGetCurrentWindow()->stopLevel = 20
+\r 20
+\a hiZoomAbsoluteScale(hiGetCurrentWindow() 0.9)
+\r t
+\a hiResizeWindow(window(2) list(-4:27 1916:1025))
+\r t
+\a hiZoomAbsoluteScale(hiGetCurrentWindow() 0.9)
+\r t
+\a hiZoomAbsoluteScale(hiGetCurrentWindow() 0.9)
+\r t
+\a prsSwitchViewMC()
+\p > 
+\a hiiSetCurrentForm('prsSwitchViewForm)
+\r t
+\a prsSwitchViewForm->workOnFD->value = "all"
+\r "all"
+\a prsSwitchViewForm->prsSwitchViewNameFD->value = "layout"
+\r "layout"
+\a hiFormDone(prsSwitchViewForm)
+\r t
+\r t
+\o Loading alvs.cxt 
+\a deInstallApp(getCurrentWindow() "Layout")
+\o Loading lo.cxt 
+\r t
+\a hiZoomAbsoluteScale(hiGetCurrentWindow() 0.9)
+\r t
+\a geSave()
+\r t
+\a ivHiDRC()
+\r nil
+\a hiiSetCurrentForm('ivDRCOptionsForm)
+\r t
+\a hiFormDone(ivDRCOptionsForm)
+\o DRC started at Fri Mar 31 17:47:06 2017
+\o 
+\o Validating hierarchy instantiation for:
+\o library: lab3
+\o cell:    sorter_top
+\o view:    layout
+\o Rules come from library gpdk.
+\o Rules path is divaDRC.rul.
+\o Inclusion limit is set to 1000.
+\o Parsing drcExtractRules of "/CMC/EDA/kits/gpdk_MIET_2.0/gpdk/divaDRC.rul"...
+\o Optimizing rules...
+\o removing unused task: ngate = geomAndNot(geomAnd(ntox Poly) Capdum)
+\o removing unused task: pgate = geomAndNot(geomAnd(ptox Poly) Capdum)
+\o removing unused task: ptox = geomAnd(PPOD Nwell)
+\o removing unused task: ntox = geomAnd(NPOD allPsub)
+\o removing unused task: allPsub = geomOr(Psub isoPsub)
+\o removing unused task: isoPsub = geomAnd(geomAndNot(bulk Nwell) Nburied)
+\o removing unused task: Psub = geomAndNot(bulk geomOr(Nwell Nburied))
+\o removing unused task: Capdum = geomOr("Capdum")
+\o Running layout DRC analysis
+\o Flat mode
+\o Full checking.
+\o executing: geomErase("marker" "warning")
+\o executing: geomErase("marker" "error")
+\o executing: geomErase("changedLayer" "tool0")
+\o executing: Nburied = geomOr("Nburied")
+\o executing: Nwell = geomOr("Nwell")
+\o executing: Pwell = geomOr("Pwell")
+\o executing: Oxide = geomOr("Oxide")
+\o executing: Poly = geomOr("Poly")
+\o executing: Pimp = geomOr("Pimp")
+\o executing: Nimp = geomOr("Nimp")
+\o executing: Cont = geomOr("Cont")
+\o executing: Metal1 = geomOr("Metal1")
+\o executing: Via1 = geomOr("Via1")
+\o executing: Metal2 = geomOr("Metal2")
+\o executing: Via2 = geomOr("Via2")
+\o executing: Metal3 = geomOr("Metal3")
+\o executing: Via3 = geomOr("Via3")
+\o executing: Metal4 = geomOr("Metal4")
+\o executing: Via4 = geomOr("Via4")
+\o executing: Metal5 = geomOr("Metal5")
+\o executing: Via5 = geomOr("Via5")
+\o executing: Metal6 = geomOr("Metal6")
+\o executing: CapMetal = geomOr("CapMetal")
+\o executing: Resdum = geomOr("Resdum")
+\o executing: DIOdummy = geomOr("DIOdummy")
+\o executing: BJTdum = geomOr("BJTdum")
+\o executing: PNPdummy = geomOr("PNPdummy")
+\o executing: offGrid("Nburied" 0.005 1 "Nburied offgrid")
+\o executing: offGrid("Nwell" 0.005 1 "Nwell offGrid")
+\o executing: offGrid("Pwell" 0.005 1 "Pwell offGrid")
+\o executing: offGrid("Oxide" 0.005 1 "Oxide offGrid")
+\o executing: offGrid("Poly" 0.005 1 "Poly offGrid")
+\o executing: offGrid("Pimp" 0.005 1 "PP offGrid")
+\o executing: offGrid("Nimp" 0.005 1 "NP offGrid")
+\o executing: offGrid("Cont" 0.005 1 "Cont offGrid")
+\o executing: offGrid("Metal1" 0.005 1 "Metal1 offGrid")
+\o executing: offGrid("Via1" 0.005 1 "Via1 offGrid")
+\o executing: offGrid("Metal2" 0.005 1 "Metal2 offGrid")
+\o executing: offGrid("Via2" 0.005 1 "Via2 offGrid")
+\o executing: offGrid("Metal3" 0.005 1 "Metal3 offGrid")
+\o executing: offGrid("Via3" 0.005 1 "Via3 offGrid")
+\o executing: offGrid("Metal4" 0.005 1 "Metal4 offGrid")
+\o executing: offGrid("Via4" 0.005 1 "Via4 offGrid")
+\o executing: offGrid("Metal5" 0.005 1 "Metal5 offGrid")
+\o executing: offGrid("Via5" 0.005 1 "Via5 offGrid")
+\o executing: offGrid("Metal6" 0.005 1 "Metal6 offGrid")
+\o executing: bulk = geomBkgnd(0)
+\o executing: NPOD = geomAnd(Nimp Oxide)
+\o executing: PPOD = geomAnd(Pimp Oxide)
+\o executing: gate = geomAnd(Poly Oxide)
+\o executing: psd = geomAndNot(PPOD gate)
+\o executing: nsd = geomAndNot(NPOD gate)
+\o executing: ntap = geomAnd(NPOD Nwell)
+\o executing: ptap = geomAndNot(PPOD Nwell)
+\o executing: drc(Nburied (width < 1.0) "0A Minimum NBuried width 1.0u")
+\o            drc(Nburied ((0 < sep) < 1) "0B Minimum NBuried space 1.0u")
+\o            drc(Nburied (notch < 1) "0B Minimum NBuried space 1.0u")
+\o executing: drc(Nwell (width < 1.0) "1A Minimum Nwell width 1.0u")
+\o            drc(Nwell ((0 < sep) < 1) "1B Minimum Nwell space 1.0u")
+\o            drc(Nwell (notch < 1) "1B Minimum Nwell space 1.0u")
+\o executing: isoNwell = geomAnd(Nwell Nburied)
+\o executing: isoNwell = geomEnclose(Nwell isoNwell)
+\o executing: saveDerived(geomAndNot(isoNwell Nburied) "1C minimum Nburied enclosre of Nwell 0.3u")
+\o executing: drc(Nburied isoNwell ((0 < enc) < 0.3) "1C Minimum NBuried enclosure of Nwell 0.3u")
+\o executing: drc(Pwell (width < 1.0) "1D Minimum Pwell width 1.0u")
+\o            drc(Pwell ((0 < sep) < 1) "1E Minimum Pwell space 1.0u")
+\o            drc(Pwell (notch < 1) "1E Minimum Pwell space 1.0u")
+\o executing: drc(Nburied Pwell (enc < 0.3) "1F Minimum NBuried enclosure of Pwell 0.3u")
+\o executing: drc(Oxide (width < 0.4) "2A Minimum Oxide width 0.4u")
+\o            drc(Oxide ((0 < sep) < 0.3) "2B Minimum Oxide space 0.3u")
+\o            drc(Oxide (notch < 0.3) "2B Minimum Oxide space 0.3u")
+\o executing: drc(Nwell Oxide (enc < 0.5) "2C Minimum Nwell enclosure of Oxide 0.5u")
+\o            drc(Nwell Oxide (sep < 0.5) "2D Minimum Nwell to Oxide space 0.5u")
+\o executing: drc(Nimp (width < 0.4) "3A Minimum Nimp width 0.4u")
+\o            drc(Nimp ((0 < sep) < 0.4) "3B Minimum Nimp space 0.4u")
+\o            drc(Nimp (notch < 0.4) "3B Minimum Nimp space 0.4u")
+\o executing: drc(Nimp Oxide (enc < 0.2) "3C Minimum Nimp enclosure of Oxide 0.2u")
+\o executing: drc(Nburied Nimp (enc < 0.6) "3D Minimum Nburied enclosure of Nimp 0.6u")
+\o executing: drc(Pimp (width < 0.4) "4A Minimum Pimp width 0.4u")
+\o            drc(Pimp ((0 < sep) < 0.4) "4B Minimum Pimp space 0.4u")
+\o            drc(Pimp (notch < 0.4) "4B Minimum Pimp space 0.4u")
+\o executing: drc(Pimp Oxide (enc < 0.2) "4C Minimum Pimp enclosure of Oxide 0.2u")
+\o executing: drc(Nburied Pimp (enc < 0.6) "4D Minimum Nburied enclosure of Pimp 0.6u")
+\o executing: badImp = geomAnd(Pimp Nimp)
+\o executing: saveDerived(badImp "4E Pimp and Nimp should not overlap")
+\o executing: drc(Poly (width < 0.18) "5A Minimum Poly width 0.18")
+\o            drc(Poly ((0 < sep) < 0.3) "5B Minimum Poly space 0.3u")
+\o            drc(Poly (notch < 0.3) "5B Minimum Poly space 0.3u")
+\o executing: drc(Poly Oxide (enc < 0.2) "5C Minimum Poly extension beyond Oxide (poly endcap) 0.2u")
+\o            drc(Oxide Poly (enc < 0.4) "5D Minimum Oxide extension beyond gate Poly 0.4u")
+\o            drc(Poly Oxide (sep < 0.2) "5E Minimum Poly to Oxide space 0.2u")
+\o executing: metal1Cont = geomAnd(Metal1 Cont)
+\o executing: polyInt = geomAndNot(Poly gate)
+\o executing: badPolyInt = geomButting(polyInt gate (keep > 1))
+\o executing: good = geomEnclose(badPolyInt metal1Cont)
+\o executing: badPolyInt = geomAndNot(badPolyInt good)
+\o executing: badGate = geomButting(gate badPolyInt)
+\o            badGate2 = geomButting(gate badPolyInt (keep == 2))
+\o executing: badGate = geomButting(badGate geomEnclose(polyInt metal1Cont))
+\o executing: saveDerived(badGate "WARNING: Gate used as conductor...")
+\o executing: saveDerived(badGate2 "WARNING: Gate used as conductor...")
+\o executing: drc(Cont (width < 0.2) "6A Minimum and maximum width of Cont 0.2u")
+\o            drc(Cont (sep < 0.2) "6B Minimum Cont space 0.2u")
+\o executing: okCont = drc(Cont ((0.0399 < area) < 0.0401))
+\o executing: saveDerived(geomAndNot(Cont okCont) "6A Minimum and maximum width of Cont 0.2u")
+\o executing: saveDerived(geomGetNon90(Cont) "Implied Rule that contacts cannot be rotated")
+\o executing: saveDerived(geomGetPolygon(Cont) "Implied Rule that contacts must be rectangles")
+\o executing: drc(Oxide Cont (enc < 0.2) "6C Minimum Oxide enclosure of Cont 0.2u")
+\o executing: drc(Poly Cont (enc < 0.2) "6D Minimum Poly enclsoure of Cont 0.2u")
+\o            drc(Poly Cont (sep < 0.2) "6E Minimum Poly to Cont space 0.2u")
+\o executing: NimpCont = geomAnd(Cont Nimp)
+\o executing: drc(Nimp NimpCont (enc < 0.2) figb "6F Minimum Nimp enclosure of Cont 0.2u")
+\o executing: PimpCont = geomAnd(Cont Pimp)
+\o executing: drc(Pimp PimpCont (enc < 0.2) figb "6G Minimum Pimp enclosure of Cont 0.2u")
+\o executing: drc(Metal1 (width < 0.3) "7A Minimum Metal1 width 0.3u")
+\o            drc(Metal1 (sep < 0.3) "7B Minimum Metal1 space 0.3u")
+\o            drc(Metal1 (notch < 0.3) "7B Minimum Metal1 space 0.3u")
+\o executing: drc(Metal1 Cont (enc < 0.1) "7C Minimum Metal1 enclosure of Cont 0.1u")
+\o executing: drc(Via1 (width < 0.2) "8A Minimum and maximum width of Via1 0.2u")
+\o            drc(Via1 (sep < 0.3) "8B Minimum Via1 space 0.3u")
+\o executing: okCont = drc(Via1 ((0.0399 < area) < 0.0401))
+\o executing: saveDerived(geomAndNot(Via1 okCont) "8A Minimum and maximum width of Via1 0.2u")
+\o executing: saveDerived(geomGetNon90(Via1) "Implied Rule that contacts cannot be rotated")
+\o executing: saveDerived(geomGetPolygon(Via1) "Implied Rule that contacts must be rectangles")
+\o executing: drc(Metal1 Via1 (enc < 0.1) "8C Minimum Metal1 enclosure of Via1 0.1u")
+\o executing: drc(Metal2 (width < 0.3) "9A Minimum Metal2 width 0.3u")
+\o            drc(Metal2 (sep < 0.3) "9B Minimum Metal2 space 0.3u")
+\o            drc(Metal2 (notch < 0.3) "9B Minimum Metal2 space 0.3u")
+\o executing: drc(Metal2 Via1 (enc < 0.1) "9C Minimum Metal2 enclosure of Via1 0.1u")
+\o executing: drc(Via2 (width < 0.2) "10A Minimum and maximum width of Via2 0.2u")
+\o            drc(Via2 (sep < 0.3) "10B Minimum Via2 space 0.3u")
+\o executing: okCont = drc(Via2 ((0.0399 < area) < 0.0401))
+\o executing: saveDerived(geomAndNot(Via2 okCont) "10A Minimum and maximum width of Via2 0.2u")
+\o executing: saveDerived(geomGetNon90(Via2) "Implied Rule that contacts cannot be rotated")
+\o executing: saveDerived(geomGetPolygon(Via2) "Implied Rule that contacts must be rectangles")
+\o executing: drc(Metal2 Via2 (enc < 0.1) "10C Minimum Metal2 enclosure of Via2 0.1u")
+\o executing: drc(Metal3 (width < 0.3) "11A Minimum Metal3 width 0.3u")
+\o            drc(Metal3 (sep < 0.3) "11B Minimum Metal3 space 0.3u")
+\o            drc(Metal3 (notch < 0.3) "11B Minimum Metal3 space 0.3u")
+\o executing: capMetal3 = geomOverlap(Metal3 CapMetal)
+\o executing: Metal3NoCap = geomAndNot(Metal3 capMetal3)
+\o executing: drc(Metal3NoCap Via2 (enc < 0.1) "11C Minimum Metal3 enclosure of Via2 0.1u")
+\o executing: drc(capMetal3 Via2 (enc < 0.1) "11D Minimum Metal3 enclosure of Via2 for metal capac...
+\o executing: drc(CapMetal (width < 0.5) "12A Minimum CapMetal width .5u")
+\o executing: drc(Metal2 CapMetal (enc < 0.4) "12B Minimum Metal2 enclosure of CapMetal 0.4u")
+\o executing: drc(CapMetal Via2 (enc < 0.2) "12C Minimum CapMetal enclosure of Via2 0.2u")
+\o executing: drc(CapMetal Metal3 (enc < 0.3) "12D Minimum CapMetal enclosure of Metal3 0.3u")
+\o executing: nplusres = geomStraddle(nsd Resdum)
+\o executing: ndio = geomAnd(nsd DIOdummy)
+\o executing: nsd = geomAndNot(nsd geomOr(nplusres ndio))
+\o executing: pnp = geomAnd(psd PNPdummy)
+\o executing: vpnp = geomAnd(psd BJTdum)
+\o executing: psd = geomAndNot(psd geomOr(pnp vpnp))
+\o executing: psub = geomAndNot(bulk Nwell)
+\o executing: saveDerived(geomAndNot(geomAndNot(nsd geomSizeInTub(ptap psub 10 edge)) ntap) "13A N...
+\o executing: saveDerived(geomAndNot(geomAndNot(psd geomSizeInTub(ntap Nwell 10 edge)) ptap) "13A ...
+\o executing: drc(Via3 (width < 0.2) "14A Minimum and maximum width of Via3 0.2u")
+\o            drc(Via3 (sep < 0.3) "14B Minimum Via3 space 0.3u")
+\o executing: okCont = drc(Via3 ((0.0399 < area) < 0.0401))
+\o executing: saveDerived(geomAndNot(Via3 okCont) "14A Minimum and maximum width of Via3 0.2u")
+\o executing: saveDerived(geomGetNon90(Via3) "Implied Rule that contacts cannot be rotated")
+\o executing: saveDerived(geomGetPolygon(Via3) "Implied Rule that contacts must be rectangles")
+\o executing: drc(Metal3 Via3 (enc < 0.1) "14C Minimum Metal3 enclosure of Via3 0.1u")
+\o executing: drc(Metal4 (width < 0.3) "15A Minimum Metal4 width 0.3u")
+\o            drc(Metal4 (sep < 0.3) "15B Minimum Metal4 space 0.3u")
+\o            drc(Metal4 (notch < 0.3) "15B Minimum Metal4 space 0.3u")
+\o executing: drc(Metal4 Via3 (enc < 0.1) "15C Minimum Metal4 enclosure of Via3 0.1u")
+\o executing: drc(Via4 (width < 0.2) "16A Minimum and maximum width of Via4 0.2u")
+\o            drc(Via4 (sep < 0.3) "16B Minimum Via4 space 0.3u")
+\o executing: okCont = drc(Via4 ((0.0399 < area) < 0.0401))
+\o executing: saveDerived(geomAndNot(Via4 okCont) "16A Minimum and maximum width of Via4 0.2u")
+\o executing: saveDerived(geomGetNon90(Via4) "Implied Rule that contacts cannot be rotated")
+\o executing: saveDerived(geomGetPolygon(Via4) "Implied Rule that contacts must be rectangles")
+\o executing: drc(Metal4 Via4 (enc < 0.1) "16C Minimum Metal4 enclosure of Via4 0.1u")
+\o executing: drc(Metal5 (width < 0.3) "17A Minimum Metal5 width 0.3u")
+\o            drc(Metal5 (sep < 0.3) "17B Minimum Metal5 space 0.3u")
+\o            drc(Metal5 (notch < 0.3) "17B Minimum Metal5 space 0.3u")
+\o executing: drc(Metal5 Via4 (enc < 0.1) "17C Minimum Metal5 enclosure of Via4 0.1u")
+\o executing: drc(Via5 (width < 0.2) "18A Minimum and maximum width of Via5 0.2u")
+\o            drc(Via5 (sep < 0.3) "18B Minimum Via5 space 0.3u")
+\o executing: okCont = drc(Via5 ((0.0399 < area) < 0.0401))
+\o executing: saveDerived(geomAndNot(Via5 okCont) "18A Minimum and maximum width of Via5 0.2u")
+\o executing: saveDerived(geomGetNon90(Via5) "Implied Rule that contacts cannot be rotated")
+\o executing: saveDerived(geomGetPolygon(Via5) "Implied Rule that contacts must be rectangles")
+\o executing: drc(Metal5 Via5 (enc < 0.1) "18C Minimum Metal5 enclosure of Via5 0.1u")
+\o executing: drc(Metal6 (width < 0.3) "19A Minimum Metal6 width 0.3u")
+\o            drc(Metal6 (sep < 0.3) "19B Minimum Metal6 space 0.3u")
+\o            drc(Metal6 (notch < 0.3) "19B Minimum Metal6 space 0.3u")
+\o executing: drc(Metal6 Via5 (enc < 0.1) "19C Minimum Metal6 enclosure of Via5 0.1u")
+\o DRC started.......Fri Mar 31 17:47:06 2017
+\o     completed ....Fri Mar 31 17:48:11 2017
+\o     CPU TIME = 00:00:31  TOTAL TIME = 00:01:05
+\o *********  Summary of rule violations for cell "sorter_top layout"  *********
+\o  # errors  Violated Rules
+\o        64  WARNING: Gate used as conductor...
+\o        64  Total errors found
+\o 
+\r t
+\a hiZoomAbsoluteScale(hiGetCurrentWindow() 0.9)
+\r t
+\a hiResizeWindow(window(1) list(598:31 1323:199))
+\r t
+\a hiResizeWindow(window(1) list(598:31 1323:316))
+\r t
+\a hiResizeWindow(window(1) list(598:31 1323:448))
+\r t
+\a hiResizeWindow(window(1) list(598:31 1323:562))
+\r t
+\a hiResizeWindow(window(1) list(598:31 1323:619))
+\r t
+\a hiResizeWindow(window(1) list(598:31 1323:683))
+\r t
+\a hiResizeWindow(window(1) list(598:31 1323:725))
+\r t
+\a hiResizeWindow(window(1) list(598:31 1323:736))
+\r t
+\a hiResizeWindow(window(1) list(598:31 1323:754))
+\r t
+\a hiResizeWindow(window(1) list(598:31 1323:763))
+\r t
+\a hiResizeWindow(window(1) list(598:31 1323:768))
+\r t
+\a hiResizeWindow(window(2) list(361:253 1261:943))
+\r t
+\a hiResizeWindow(window(2) list(366:244 1266:934))
+\r t
+\a hiResizeWindow(window(2) list(370:240 1270:930))
+\r t
+\a hiResizeWindow(window(2) list(375:235 1275:925))
+\r t
+\a hiResizeWindow(window(2) list(379:230 1279:920))
+\r t
+\a hiResizeWindow(window(2) list(380:228 1280:918))
+\r t
+\a hiResizeWindow(window(2) list(382:227 1282:917))
+\r t
+\a hiResizeWindow(window(2) list(383:226 1283:916))
+\r t
+\a hiResizeWindow(window(2) list(385:226 1285:916))
+\r t
+\a hiResizeWindow(window(2) list(386:225 1286:915))
+\r t
+\a hiResizeWindow(window(2) list(387:224 1287:914))
+\r t
+\a hiResizeWindow(window(2) list(388:223 1288:913))
+\r t
+\a hiResizeWindow(window(2) list(390:222 1290:912))
+\r t
+\a hiResizeWindow(window(2) list(391:221 1291:911))
+\r t
+\a hiResizeWindow(window(2) list(392:221 1292:911))
+\r t
+\a hiResizeWindow(window(2) list(394:220 1294:910))
+\r t
+\a hiResizeWindow(window(2) list(395:219 1295:909))
+\r t
+\a hiResizeWindow(window(2) list(397:219 1297:909))
+\r t
+\a hiResizeWindow(window(2) list(398:219 1298:909))
+\r t
+\a hiResizeWindow(window(2) list(400:218 1300:908))
+\r t
+\a hiResizeWindow(window(2) list(401:218 1301:908))
+\r t
+\a hiResizeWindow(window(2) list(402:218 1302:908))
+\r t
+\a hiResizeWindow(window(2) list(403:217 1303:907))
+\r t
+\a hiResizeWindow(window(2) list(401:219 1301:909))
+\r t
+\a hiResizeWindow(window(2) list(397:221 1297:911))
+\r t
+\a hiResizeWindow(window(2) list(389:223 1289:913))
+\r t
+\a hiResizeWindow(window(2) list(383:225 1283:915))
+\r t
+\a hiResizeWindow(window(2) list(376:230 1276:920))
+\r t
+\a hiResizeWindow(window(2) list(370:230 1270:920))
+\r t
+\a hiResizeWindow(window(2) list(365:232 1265:922))
+\r t
+\a hiResizeWindow(window(2) list(361:232 1261:922))
+\r t
+\a hiResizeWindow(window(2) list(357:234 1257:924))
+\r t
+\a hiResizeWindow(window(2) list(354:234 1254:924))
+\r t
+\a hiResizeWindow(window(2) list(352:235 1252:925))
+\r t
+\a hiResizeWindow(window(2) list(351:235 1251:925))
+\r t
+\a hiResizeWindow(window(2) list(349:235 1249:925))
+\r t
+\a hiResizeWindow(window(2) list(347:235 1247:925))
+\r t
+\a hiResizeWindow(window(2) list(346:235 1246:925))
+\r t
+\a hiResizeWindow(window(2) list(342:235 1242:925))
+\r t
+\a hiResizeWindow(window(2) list(339:235 1239:925))
+\r t
+\a hiResizeWindow(window(2) list(337:235 1237:925))
+\r t
+\a hiResizeWindow(window(2) list(333:236 1233:926))
+\r t
+\a hiResizeWindow(window(2) list(332:236 1232:926))
+\r t
+\a hiResizeWindow(window(2) list(328:238 1228:928))
+\r t
+\a hiResizeWindow(window(2) list(326:240 1226:930))
+\r t
+\a hiResizeWindow(window(2) list(323:241 1223:931))
+\r t
+\a hiResizeWindow(window(2) list(322:241 1222:931))
+\r t
+\a hiResizeWindow(window(2) list(319:241 1219:931))
+\r t
+\a hiResizeWindow(window(2) list(316:243 1216:933))
+\r t
+\a hiResizeWindow(window(2) list(308:244 1208:934))
+\r t
+\a hiResizeWindow(window(2) list(297:246 1197:936))
+\r t
+\a hiResizeWindow(window(2) list(285:251 1185:941))
+\r t
+\a hiResizeWindow(window(2) list(272:253 1172:943))
+\r t
+\a hiResizeWindow(window(2) list(255:258 1155:948))
+\r t
+\a hiResizeWindow(window(2) list(238:263 1138:953))
+\r t
+\a hiResizeWindow(window(2) list(221:268 1121:958))
+\r t
+\a hiResizeWindow(window(2) list(210:270 1110:960))
+\r t
+\a hiResizeWindow(window(2) list(199:272 1099:962))
+\r t
+\a hiResizeWindow(window(2) list(188:274 1088:964))
+\r t
+\a hiResizeWindow(window(2) list(178:279 1078:969))
+\r t
+\a hiResizeWindow(window(2) list(171:279 1071:969))
+\r t
+\a hiResizeWindow(window(2) list(169:279 1069:969))
+\r t
+\a hiResizeWindow(window(2) list(166:279 1066:969))
+\r t
+\a hiResizeWindow(window(2) list(165:279 1065:969))
+\r t
+\a hiResizeWindow(window(2) list(164:279 1064:969))
+\r t
+\a hiResizeWindow(window(2) list(163:279 1063:969))
+\r t
+\a hiResizeWindow(window(2) list(161:279 1061:969))
+\r t
+\a hiResizeWindow(window(2) list(160:279 1060:969))
+\r t
+\a hiResizeWindow(window(2) list(159:279 1059:969))
+\r t
+\a hiResizeWindow(window(2) list(158:279 1058:969))
+\r t
+\a hiResizeWindow(window(2) list(156:278 1056:968))
+\r t
+\a hiResizeWindow(window(2) list(155:278 1055:968))
+\r t
+\a hiResizeWindow(window(2) list(155:277 1055:967))
+\r t
+\a hiResizeWindow(window(2) list(155:276 1055:966))
+\r t
+\a hiResizeWindow(window(2) list(155:273 1055:963))
+\r t
+\a hiResizeWindow(window(2) list(136:268 1036:958))
+\r t
+\a hiResizeWindow(window(2) list(128:263 1028:953))
+\r t
+\a hiResizeWindow(window(2) list(121:261 1021:951))
+\r t
+\a hiResizeWindow(window(2) list(116:258 1016:948))
+\r t
+\a hiResizeWindow(window(2) list(110:254 1010:944))
+\r t
+\a hiResizeWindow(window(2) list(108:253 1008:943))
+\r t
+\a hiResizeWindow(window(2) list(105:250 1005:940))
+\r t
+\a hiResizeWindow(window(2) list(101:246 1001:936))
+\r t
+\a hiResizeWindow(window(2) list(99:244 999:934))
+\r t
+\a hiResizeWindow(window(2) list(94:240 994:930))
+\r t
+\a hiResizeWindow(window(2) list(90:236 990:926))
+\r t
+\a hiResizeWindow(window(2) list(88:232 988:922))
+\r t
+\a hiResizeWindow(window(2) list(86:226 986:916))
+\r t
+\a hiResizeWindow(window(2) list(84:221 984:911))
+\r t
+\a hiResizeWindow(window(2) list(82:215 982:905))
+\r t
+\a hiResizeWindow(window(2) list(78:208 978:898))
+\r t
+\a hiResizeWindow(window(2) list(77:200 977:890))
+\r t
+\a hiResizeWindow(window(2) list(75:193 975:883))
+\r t
+\a hiResizeWindow(window(2) list(73:187 973:877))
+\r t
+\a hiResizeWindow(window(2) list(73:182 973:872))
+\r t
+\a hiResizeWindow(window(2) list(73:176 973:866))
+\r t
+\a hiResizeWindow(window(2) list(73:175 973:865))
+\r t
+\a hiResizeWindow(window(2) list(73:174 973:864))
+\r t
+\a hiResizeWindow(window(2) list(74:170 974:860))
+\r t
+\a hiResizeWindow(window(2) list(77:165 977:855))
+\r t
+\a hiResizeWindow(window(2) list(81:158 981:848))
+\r t
+\a hiResizeWindow(window(2) list(86:150 986:840))
+\r t
+\a hiResizeWindow(window(2) list(88:143 988:833))
+\r t
+\a hiResizeWindow(window(2) list(89:142 989:832))
+\r t
+\a hiResizeWindow(window(2) list(90:139 990:829))
+\r t
+\a hiResizeWindow(window(2) list(91:138 991:828))
+\r t
+\a hiResizeWindow(window(2) list(92:137 992:827))
+\r t

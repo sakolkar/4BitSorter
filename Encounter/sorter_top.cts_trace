@@ -7,8 +7,8 @@ Tracing Clock padClk
 
 ****** Clock Tree (padClk) Structure
 Nr. Subtrees                   : 2
-Nr. Sinks                      : 32
-Nr.          Rising  Sync Pins : 32
+Nr. Sinks                      : 64
+Nr.          Rising  Sync Pins : 64
 Nr. Inverter Rising  Sync Pins : 0
 Nr.          Falling Sync Pins : 0
 Nr. Inverter Falling Sync Pins : 0
@@ -16,7 +16,7 @@ Nr. Inverter Falling Sync Pins : 0
 ** Leaf Pins
 CELL (PORT)                            Nr.
 -----------------------------------------------
-SDFFSRX1 (CK)                           32
+SDFFSRX1 (CK)                           64
 -----------------------------------------------
 
 
@@ -41,8 +41,8 @@ PDUDGZ (PAD)                            1
           Nr. of Gated Clocks           : 1
 *DEPTH 1 Input_Pin: (padClkG/PAD) Output_Pin: (padClkG/Y) Cell: (PDUDGZ) Net: (clk) NO-INV
           Nr. of Exclude Pins           : 0
-          Nr. of Total Sync Pins        : 32
-          Nr. of     Rising  Sync Pins  : 32
+          Nr. of Total Sync Pins        : 64
+          Nr. of     Rising  Sync Pins  : 64
           Nr. of Inv Rising  Sync Pins  : 0
           Nr. of     Falling Sync Pins  : 0
           Nr. of Inv Falling Sync Pins  : 0
@@ -68,6 +68,38 @@ PDUDGZ (PAD)                            1
   (Sync)coreG/Dreg_reg_2_/CK
   (Sync)coreG/Dreg_reg_1_/CK
   (Sync)coreG/Dreg_reg_0_/CK
+  (Sync)coreG/R1_A_reg_3_/CK
+  (Sync)coreG/R1_A_reg_2_/CK
+  (Sync)coreG/R1_A_reg_1_/CK
+  (Sync)coreG/R1_A_reg_0_/CK
+  (Sync)coreG/R1_B_reg_3_/CK
+  (Sync)coreG/R1_B_reg_2_/CK
+  (Sync)coreG/R1_B_reg_1_/CK
+  (Sync)coreG/R1_B_reg_0_/CK
+  (Sync)coreG/R1_C_reg_3_/CK
+  (Sync)coreG/R1_C_reg_2_/CK
+  (Sync)coreG/R1_C_reg_1_/CK
+  (Sync)coreG/R1_C_reg_0_/CK
+  (Sync)coreG/R1_D_reg_3_/CK
+  (Sync)coreG/R1_D_reg_2_/CK
+  (Sync)coreG/R1_D_reg_1_/CK
+  (Sync)coreG/R1_D_reg_0_/CK
+  (Sync)coreG/R2_A_reg_3_/CK
+  (Sync)coreG/R2_A_reg_2_/CK
+  (Sync)coreG/R2_A_reg_1_/CK
+  (Sync)coreG/R2_A_reg_0_/CK
+  (Sync)coreG/R2_B_reg_3_/CK
+  (Sync)coreG/R2_B_reg_2_/CK
+  (Sync)coreG/R2_B_reg_1_/CK
+  (Sync)coreG/R2_B_reg_0_/CK
+  (Sync)coreG/R2_C_reg_3_/CK
+  (Sync)coreG/R2_C_reg_2_/CK
+  (Sync)coreG/R2_C_reg_1_/CK
+  (Sync)coreG/R2_C_reg_0_/CK
+  (Sync)coreG/R2_D_reg_3_/CK
+  (Sync)coreG/R2_D_reg_2_/CK
+  (Sync)coreG/R2_D_reg_1_/CK
+  (Sync)coreG/R2_D_reg_0_/CK
   (Sync)coreG/S1reg_reg_3_/CK
   (Sync)coreG/S1reg_reg_2_/CK
   (Sync)coreG/S1reg_reg_1_/CK

@@ -49,23 +49,38 @@ BEGIN
 		Clk <= '1';
 		wait for Clk_period/2;
 	end process;
- 
+
 	-- Stimulus process
 	stim_proc: process
-    begin
-        for i in 0 to 3 loop
-            for j in 0 to 3 loop
-                for k in 0 to 3 loop
-                    for l in 0 to 3 loop
-                        A <= A + inc;
-                        wait for Clk_period;
-                    end loop;
-                    B <= B + inc;
-                end loop;
-                C <= C + inc;
-        end loop;
-        D <= D + inc;
-    end loop;
-                        
-   end process;
+	begin
+		A <= x"3";
+		B <= x"5";
+		C <= x"5";
+		D <= x"5";
+		wait for clk_period;
+
+		A <= x"A";
+		B <= x"F";
+		C <= x"5";
+		D <= x"5";
+		wait for clk_period;
+
+		A <= x"A";
+		B <= x"3";
+		C <= x"B";
+		D <= x"7";
+		wait for clk_period;
+
+		A <= x"1";
+		B <= x"2";
+		C <= x"3";
+		D <= x"4";
+		wait for clk_period;
+
+		A <= x"4";
+		B <= x"3";
+		C <= x"2";
+		D <= x"1";
+		wait for clk_period;
+	end process;
 END;

@@ -1,0 +1,50 @@
+@(#)$CDS: ihdl.exe version 5.1.0 06/08/2010 11:07 (cicln04) $  Fri Mar 31 17:53:11 2017
+
+module ADDFX1 already in target/reference library GSCLib
+module ADDHX1 already in target/reference library GSCLib
+module AND2X1 already in target/reference library GSCLib
+module AOI21X1 already in target/reference library GSCLib
+module AOI22X1 already in target/reference library GSCLib
+module BUFX1 already in target/reference library GSCLib
+module BUFX3 already in target/reference library GSCLib
+module CLKBUFX1 already in target/reference library GSCLib
+module CLKBUFX2 already in target/reference library GSCLib
+module CLKBUFX3 already in target/reference library GSCLib
+module DFFSRX1 already in target/reference library GSCLib
+module DFFX1 already in target/reference library GSCLib
+module INVX1 already in target/reference library GSCLib
+module INVX2 already in target/reference library GSCLib
+module INVX4 already in target/reference library GSCLib
+module INVX8 already in target/reference library GSCLib
+module MX2X1 already in target/reference library GSCLib
+module NAND2X1 already in target/reference library GSCLib
+module NAND2X2 already in target/reference library GSCLib
+module NAND3X1 already in target/reference library GSCLib
+module NAND4X1 already in target/reference library GSCLib
+module NOR2X1 already in target/reference library GSCLib
+module NOR3X1 already in target/reference library GSCLib
+module NOR4X1 already in target/reference library GSCLib
+module OAI21X1 already in target/reference library GSCLib
+module OAI22X1 already in target/reference library GSCLib
+module OAI33X1 already in target/reference library GSCLib
+module OR2X1 already in target/reference library GSCLib
+module OR4X1 already in target/reference library GSCLib
+module SDFFSRX1 already in target/reference library GSCLib
+module TBUFX1 already in target/reference library GSCLib
+module TBUFX2 already in target/reference library GSCLib
+module TBUFX4 already in target/reference library GSCLib
+module TBUFX8 already in target/reference library GSCLib
+module TINVX1 already in target/reference library GSCLib
+module TLATSRX1 already in target/reference library GSCLib
+
+Mismatch between existing symbol TLATX1 and given hdl description
+Checked in symbol TLATX1
+Schematic for TLATX1 exists in library GSCLib. Not imported since overwrite option is set to off.
+module XOR2X1 already in target/reference library GSCLib
+Checked in symbol sorter
+Checked in schematic sorter
+Verilog definition for module PDUDGZ was not found. Using lib 'GSCLib_IO' cell 'PDUDGZ' view 'symbol symbolPT' as its symbol.
+Verilog definition for module PDO12CDG was not found. Using lib 'GSCLib_IO' cell 'PDO12CDG' view 'symbol symbolPT' as its symbol.
+Checked in symbol sorter_top
+Checked in schematic sorter_top
+End of Logfile.

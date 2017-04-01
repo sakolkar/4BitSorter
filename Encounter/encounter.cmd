@@ -1,7 +1,7 @@
 #######################################################
 #                                                     #
 #  Encounter Command Logging File                     #
-#  Created on Tue Mar 21 14:59:00 2017                #
+#  Created on Fri Mar 31 17:41:25 2017                #
 #                                                     #
 #######################################################
 
@@ -19,7 +19,7 @@ saveDesign sorter_top.enc
 setFPlanRowSpacingAndType 0.66 1
 setBottomIoPadOrient R180
 setIoFlowFlag 0
-floorPlan -site CORE -r 0.05882352941 0.7 20 20 20 20
+floorPlan -site CORE -r 0.125 0.7 20 20 20 20
 uiSetTool select
 getIoFlowFlag
 addRing -spacing_bottom 1 -width_left 5 -width_bottom 5 -width_top 5 -spacing_top 1 -layer_bottom Metal1 -stacked_via_top_layer Metal6 -width_right 5 -around core -jog_distance 0.33 -offset_bottom 2 -layer_top Metal1 -threshold 0.33 -offset_left 2 -spacing_right 1 -spacing_left 1 -offset_right 2 -offset_top 2 -layer_right Metal2 -nets {GRND POWR } -stacked_via_bottom_layer Metal1 -layer_left Metal2
@@ -77,5 +77,3 @@ saveDesign sorter_top.enc
 saveDesign sorter_top_final.enc
 extractRC
 write_sdf -version 2.1 -precision 4 design.sdf
-fit
-fit

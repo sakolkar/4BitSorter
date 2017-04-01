@@ -1,0 +1,105 @@
+
+Running simulation in directory: "/afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Cadence/LVS".
+
+Initializing diode.cbe from libInit.il for library gpdk...
+Initializing cap.cbe from libInit.il for library gpdk...
+Initializing ind.cbe from libInit.il for library gpdk...
+Initializing moscap.cbe from libInit.il for library gpdk...
+Initializing bjt.cbe from libInit.il for library gpdk...
+Initializing mos.cbe from libInit.il for library gpdk...
+Initializing vpnp.cbe from libInit.il for library gpdk...
+Initializing res.cbe from libInit.il for library gpdk...
+Initializing inhTerm.ile from libInit.il for library gpdk...
+Initializing utility.ile from libInit.il for library gpdk...
+Initializing mos.ile from libInit.il for library gpdk...
+Initializing addWire.ile from libInit.il for library gpdk...
+Initializing moscap.ile from libInit.il for library gpdk...
+Initializing subtie.ile from libInit.il for library gpdk...
+Initializing res.ile from libInit.il for library gpdk...
+Initializing ind.ile from libInit.il for library gpdk...
+
+
+Begin netlist:    Mar 31 18:57:13 2017
+	view name list	= ("auLvs" "extracted" "schematic")
+	stop name list	= ("auLvs")
+	library name	= "lab3"
+	cell name	= "sorter_top"
+	view name	= "extracted"
+	globals lib	= "basic"
+Running Artist Flat Netlisting ...
+End netlist:    Mar 31 18:57:15 2017
+
+Moving original netlist to extNetlist
+Removing parasitic components from netlist
+	presistors removed:  0
+	pcapacitors removed: 0
+	pinductors removed:  0
+	pdiodes removed:     0
+	trans lines removed: 0
+	2762 nodes merged into 2762 nodes
+*************************************************************
+*             Generic Standard Cell Library                 *
+*                                                           *
+* This library is provided as an education medium. It is    *
+* based upon the generic process available thru Cadence PDK *
+* factory in the GPDK Process Delivery Kit.                 *
+* Cadence shall in no case be liable for the contents of    *
+* this library.                                             *
+*                                                           *
+* GSCLib, v0.91, Oct 2002, Copyright Cadence Design Systems  *
+* This library can be freely distributed.                   *
+*                                                           *
+*************************************************************
+ 
+
+
+Begin netlist:    Mar 31 18:57:15 2017
+	view name list	= ("auLvs" "schematic")
+	stop name list	= ("auLvs")
+	library name	= "lab3"
+	cell name	= "sorter_top"
+	view name	= "schematic"
+	globals lib	= "basic"
+Running Artist Flat Netlisting ...
+End netlist:    Mar 31 18:57:16 2017
+
+Moving original netlist to extNetlist
+Removing parasitic components from netlist
+	presistors removed:  0
+	pcapacitors removed: 0
+	pinductors removed:  0
+	pdiodes removed:     0
+	trans lines removed: 0
+	4526 nodes merged into 4526 nodes
+
+Running netlist comparison program:  LVS
+Begin comparison:    Mar 31 18:57:17 2017
+@(#)$CDS: LVS.exe version 5.1.0 06/08/2010 11:04 (cicln04) $
+
+The net-lists match.
+
+			     layout  schematic
+				instances
+	un-matched		0	0
+	rewired			0	0
+	size errors		0	0
+	pruned			0	0
+	active			6977	5169
+	total			6977	5169
+
+				  nets
+	un-matched		0	0
+	merged			0	0
+	pruned			0	0
+	active			2762	2762
+	total			2762	2762
+
+				terminals
+	un-matched		0	0
+	matched but
+	different type		0	0
+	total			35	35
+End comparison:      Mar 31 18:57:17 2017
+
+
+Comparison program completed successfully.

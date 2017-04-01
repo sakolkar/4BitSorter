@@ -27,7 +27,7 @@ setFPlanRowSpacingAndType 0.66 1
 setBottomIoPadOrient R180
 setIoFlowFlag 0
 
-floorPlan -site CORE -r 0.05882352941 0.7 20 20 20 20
+floorPlan -site CORE -r 0.125 0.7 20 20 20 20
 
 uiSetTool select
 getIoFlowFlag
