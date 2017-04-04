@@ -19,20 +19,20 @@ Initializing res.ile from libInit.il for library gpdk...
 Initializing ind.ile from libInit.il for library gpdk...
 
 
-Begin netlist:    Mar 31 18:57:13 2017
+Begin netlist:    Apr  3 20:10:12 2017
 	view name list	= ("auLvs" "extracted" "schematic")
 	stop name list	= ("auLvs")
 	library name	= "lab3"
 	cell name	= "sorter_top"
-	view name	= "extracted"
+	view name	= "extractedC"
 	globals lib	= "basic"
 Running Artist Flat Netlisting ...
-End netlist:    Mar 31 18:57:15 2017
+End netlist:    Apr  3 20:10:15 2017
 
 Moving original netlist to extNetlist
 Removing parasitic components from netlist
 	presistors removed:  0
-	pcapacitors removed: 0
+	pcapacitors removed: 13272
 	pinductors removed:  0
 	pdiodes removed:     0
 	trans lines removed: 0
@@ -53,7 +53,7 @@ Removing parasitic components from netlist
  
 
 
-Begin netlist:    Mar 31 18:57:15 2017
+Begin netlist:    Apr  3 20:10:15 2017
 	view name list	= ("auLvs" "schematic")
 	stop name list	= ("auLvs")
 	library name	= "lab3"
@@ -61,7 +61,7 @@ Begin netlist:    Mar 31 18:57:15 2017
 	view name	= "schematic"
 	globals lib	= "basic"
 Running Artist Flat Netlisting ...
-End netlist:    Mar 31 18:57:16 2017
+End netlist:    Apr  3 20:10:16 2017
 
 Moving original netlist to extNetlist
 Removing parasitic components from netlist
@@ -73,7 +73,7 @@ Removing parasitic components from netlist
 	4526 nodes merged into 4526 nodes
 
 Running netlist comparison program:  LVS
-Begin comparison:    Mar 31 18:57:17 2017
+Begin comparison:    Apr  3 20:10:16 2017
 @(#)$CDS: LVS.exe version 5.1.0 06/08/2010 11:04 (cicln04) $
 
 The net-lists match.
@@ -99,7 +99,7 @@ The net-lists match.
 	matched but
 	different type		0	0
 	total			35	35
-End comparison:      Mar 31 18:57:17 2017
+End comparison:      Apr  3 20:10:17 2017
 
 
 Comparison program completed successfully.

@@ -60,6 +60,8 @@ Using terminal names as correspondence points.
     N2025     N34       padS4reg_2_
     N2677     N68       padS4reg_3_
 
+Devices in the netlist but not in the rules:
+        pcapacitor
 Devices in the rules but not in the netlist:
         nplusres nmoscap mimcap vpnp npn pnp inductor ndio pdio cds_thru
 

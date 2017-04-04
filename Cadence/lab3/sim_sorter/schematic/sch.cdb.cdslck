@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      akolkar
+HostName                       5013-w19.aictlabs.ualberta.ca
+ProcessIdentifier              4069
+ProcessCreationTime_UTC        1491328629
+ProcessCreationTime_Readable   Tue Apr  4 11:57:09 2017 MDT
+AppIdentifier                  /EDA/tools/cadence/IC/tools/dfII/bin/icfb.exe
+OSType                         lnx86
+ReasonForPlacingEditLock       XXopen upgrade lock
+FilePathUsedToEditLock         /afs/ualberta.ca/home/a/k/akolkar/ece403-lab3/Cadence/lab3/sim_sorter/schematic/sch.cdb
+TimeEditLocked                 Tue Apr  4 11:57:32 2017 MDT

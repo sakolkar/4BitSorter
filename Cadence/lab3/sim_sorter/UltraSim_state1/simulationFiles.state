@@ -1,0 +1,12 @@
+UltraSimHlcheck "0"
+stimulusFile nil
+UltraSimVecAutostop nil
+UltraSimVcdFile ""
+definitionFiles nil
+UltraSimEVcdFile ""
+UltraSimEVcdInfo ""
+UltraSimVcdAutostop nil
+UltraSimVectorFile nil
+includePath ""
+UltraSimEVcdAutostop nil
+UltraSimVcdInfo ""

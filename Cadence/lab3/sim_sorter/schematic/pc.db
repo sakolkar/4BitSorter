@@ -1,0 +1,46 @@
+#
+analogLib vdc symbol
+V1
+#
+analogLib vpulse symbol
+V92
+V91
+V90
+V89
+V88
+V81
+V74
+V70
+V72
+V71
+V75
+V82
+V77
+V68
+V69
+V4
+V0
+#
+lab3 sorter_top symbol
+I0
+#ISCELL
+basic noConn symbol
+I16
+I15
+I14
+I13
+I12
+I11
+I10
+I9
+I8
+I7
+I6
+I5
+I4
+I3
+I2
+I1
+#ISCELL
+analogLib gnd symbol
+I18

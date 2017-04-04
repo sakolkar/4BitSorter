@@ -1,0 +1,9 @@
+(envOpts runMode) "Batch"
+(envOpts userCmdLineOption) ""
+(envOpts printComments) nil
+(envOpts switchViewList) ("extractedC" "spectre" "cmos_sch" "cmos.sch" "schematic" "veriloga")
+(envOpts cmd64bit) nil
+(envOpts autoDisplay) t
+(envOpts netlistFormat) "spectre"
+(envOpts interactiveCtrFile) ""
+(envOpts stopViewList) ("spectre")

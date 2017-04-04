@@ -1,0 +1,1339 @@
+\o Program:		@(#)$CDS: icfb.exe version 5.1.0 06/08/2010 11:08 (cicln04) $
+\o Hierarchy:		/CMC/EDA/tools/cadence/IC5141USR6_2010/tools.lnx86/dfII/
+\o Sub version:		sub-version 5.10.41.500.6.143 (32-bit addresses)
+\o Host name (type):	5013-w19 (x86_64)
+\o Operating system:	Linux 2.6.32-573.3.1.el6.x86_64 #1 SMP Thu Aug 13 12:55:33 CDT 2015
+\o X display name:	:0.0
+\o X server:		Scientific Linux
+\o Depth of Visual (Root):	24 (24)
+\o Number of Planes Used:	24
+\o X version:		11.0 (vendor release 11500000)
+\o Window Manager:	other
+\o User Name:		akolkar
+\o Working Directory:	5013-w19:/scratch/akolkar/Cadence
+\o Process Id:		4672
+\o 
+\o COPYRIGHT © 1992-2009  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           © 1992-2009  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\p > 
+\o 8-bit PseudoColor Visual is not available (default Visual option).
+\o Using 24-bit TrueColor Visual.
+\o The program xdpyinfo can be used to verify the Visuals available
+\o for your display.
+\o Loading PRshare.cxt 
+\o Loading LVS.cxt 
+\o Loading layerProc.cxt 
+\o Loading ams.cxt 
+\o Loading acv.cxt 
+\o Loading auCore.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading seismic.cxt 
+\p > 
+\a deOpen()
+\o *************************************************************
+\o *             Generic Standard Cell Library                 *
+\o *                                                           *
+\o * This library is provided as an education medium. It is    *
+\o * based upon the generic process available thru Cadence PDK *
+\o * factory in the GPDK Process Delivery Kit.                 *
+\o * Cadence shall in no case be liable for the contents of    *
+\o * this library.                                             *
+\o *                                                           *
+\o * GSCLib, v0.91, Oct 2002, Copyright Cadence Design Systems  *
+\o * This library can be freely distributed.                   *
+\o *                                                           *
+\o *************************************************************
+\o  
+\o Loading custom Skill for GSCLib....
+\p > 
+\a hiiSetCurrentForm('deOpenForm)
+\r t
+\a deOpenForm->deLibName->value = "lab3"
+\r "lab3"
+\a deOpenForm->deCellChoice->value = '("sim_sorter" )
+\r ("sim_sorter")
+\a _deCellChoiceCB()
+\r "UltraSim_state1"
+\a deOpenForm->deViewName->value = "schematic"
+\r "schematic"
+\a hiFormDone(deOpenForm)
+\r t
+\o Initializing diode.cbe from libInit.il for library gpdk...
+\o Initializing cap.cbe from libInit.il for library gpdk...
+\o Initializing ind.cbe from libInit.il for library gpdk...
+\o Initializing moscap.cbe from libInit.il for library gpdk...
+\o Initializing bjt.cbe from libInit.il for library gpdk...
+\o Initializing mos.cbe from libInit.il for library gpdk...
+\o Initializing vpnp.cbe from libInit.il for library gpdk...
+\o Initializing res.cbe from libInit.il for library gpdk...
+\o Initializing inhTerm.ile from libInit.il for library gpdk...
+\o Initializing utility.ile from libInit.il for library gpdk...
+\o Initializing mos.ile from libInit.il for library gpdk...
+\o Initializing addWire.ile from libInit.il for library gpdk...
+\o Initializing moscap.ile from libInit.il for library gpdk...
+\o Initializing subtie.ile from libInit.il for library gpdk...
+\o Initializing res.ile from libInit.il for library gpdk...
+\o Initializing ind.ile from libInit.il for library gpdk...
+\o Loading awv.cxt 
+\o Loading oasis.cxt 
+\o Loading analog.cxt 
+\o Loading asimenv.cxt 
+\o Loading spectrei.cxt 
+\o Loading schematic.cxt 
+\o Loading lo.cxt 
+\r window:2
+\a hiResizeWindow(window(2) list(-4:27 1916:1025))
+\r t
+\a schZoomFit(1.0 0.9)
+\r t
+\o Loading alvs.cxt 
+\a deInstallApp(getCurrentWindow() "analogArtist-Schematic")
+\o Loading simui.cxt 
+\o Selecting corner "session-default" so that the model path matches the session default.
+\o Loading corners.cxt 
+\r t
+\a hiSetCurrentWindow(window(2))
+\r t
+\a schZoomFit(1.0 0.9)
+\r t
+\a hiResizeWindow(window(3) list(4:362 582:734))
+\r t
+\a hiResizeWindow(window(3) list(10:362 588:734))
+\r t
+\a hiResizeWindow(window(3) list(22:362 600:734))
+\r t
+\a hiResizeWindow(window(3) list(41:362 619:734))
+\r t
+\a hiResizeWindow(window(3) list(56:362 634:734))
+\r t
+\a hiResizeWindow(window(3) list(75:360 653:732))
+\r t
+\a hiResizeWindow(window(3) list(94:357 672:729))
+\r t
+\a hiResizeWindow(window(3) list(115:355 693:727))
+\r t
+\a hiResizeWindow(window(3) list(136:352 714:724))
+\r t
+\a hiResizeWindow(window(3) list(157:349 735:721))
+\r t
+\a hiResizeWindow(window(3) list(178:344 756:716))
+\r t
+\a hiResizeWindow(window(3) list(199:342 777:714))
+\r t
+\a hiResizeWindow(window(3) list(222:339 800:711))
+\r t
+\a hiResizeWindow(window(3) list(245:336 823:708))
+\r t
+\a hiResizeWindow(window(3) list(266:334 844:706))
+\r t
+\a hiResizeWindow(window(3) list(287:331 865:703))
+\r t
+\a hiResizeWindow(window(3) list(304:329 882:701))
+\r t
+\a hiResizeWindow(window(3) list(319:327 897:699))
+\r t
+\a hiResizeWindow(window(3) list(332:325 910:697))
+\r t
+\a hiResizeWindow(window(3) list(345:323 923:695))
+\r t
+\a hiResizeWindow(window(3) list(354:323 932:695))
+\r t
+\a hiResizeWindow(window(3) list(361:323 939:695))
+\r t
+\a hiResizeWindow(window(3) list(362:323 940:695))
+\r t
+\a deOpen()
+\p > 
+\a hiFormCancel(deOpenForm)
+\r t
+\r nil
+\a hiSetCurrentWindow(window(3))
+\r t
+\a sevChooseSimulator('sevSession1)
+\p > 
+\a hiiSetCurrentForm('sevSimulatorForm1)
+\r t
+\a sevSimulatorForm1->simulator->value = "UltraSim"
+\r "UltraSim"
+\a hiFormDone(sevSimulatorForm1)
+\o Loading cdf.cxt 
+\a hiSetCurrentWindow(window(2))
+\r t
+\a hiSetCurrentWindow(window(3))
+\r t
+\a hiSetCurrentWindow(window(2))
+\r t
+\a hiSetCurrentWindow(window(3))
+\r t
+\o Loading hspiceD.cxt 
+\o Loading spectreinl.cxt 
+\o Loading UltraSim.cxt 
+\o Selecting corner "session-default" so that the model path matches the session default.
+\r t
+\r t
+\a sevEditModels('sevSession1)
+\r t
+\a hiiSetCurrentForm('editModelsForm)
+\r t
+\a editModelsForm->modelLibLibrariesFileStringField->value="/EDA/kits/gpdk18/models/gpdk.scs"
+\r "/EDA/kits/gpdk18/models/gpdk.scs"
+\a editModelsForm->modelLibLibrariesSectionStringField->value = "NN"
+\r "NN"
+\a _hiFormApplyCB(editModelsForm)
+\r t
+\a hiFormDone(editModelsForm)
+\r t
+\a sevChooseEnvironmentOptions('sevSession1)
+\p > 
+\a hiiSetCurrentForm('_asii_UltraSim1_envOpts_form)
+\r t
+\a _asii_UltraSim1_envOpts_form->switchViewList->value = "extractedC spectre cmos_sch cmos.sch schematic veriloga"
+\r "extractedC spectre cmos_sch cmos.sch schematic veriloga"
+\a hiFormDone(_asii_UltraSim1_envOpts_form)
+\r t
+\r t
+\a sevLoadState('sevSession1)
+\p > 
+\a hiiSetCurrentForm('sevLoadForm1)
+\r t
+\a sevLoadForm1->optionCellView->value = "Cellview"
+\r "Cellview"
+\a hiFormDone(sevLoadForm1)
+\r t
+\r t
+\a sevChooseEnvironmentOptions('sevSession1)
+\p > 
+\a hiiSetCurrentForm('_asii_UltraSim1_envOpts_form)
+\r t
+\a hiFormDone(_asii_UltraSim1_envOpts_form)
+\r t
+\r t
+\a sevEditModels('sevSession1)
+\r t
+\a hiiSetCurrentForm('editModelsForm)
+\r t
+\a hiFormDone(editModelsForm)
+\r t
+\a hiSetCurrentWindow(window(2))
+\r t
+\a schZoomFit(1.0 0.9)
+\r t
+\a hiSetCurrentWindow(window(3))
+\r t
+\a sevWindowForm1->varListBox->value = '( "3   tper     3.8n   " )
+\r ("3   tper     3.8n   ")
+\a sevNetlistAndRun('sevSession1)
+\o Delete sst2 data in /afs/ualberta.ca/home/a/k/akolkar/simulation/sim_sorter/UltraSim/schematic/psf.
+\o generate netlist...
+\o Loading seCore.cxt 
+\o Begin Incremental Netlisting Apr  4 12:36:58 2017
+\o End netlisting Apr  4 12:36:59 2017
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   1.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\r t
+\o simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\a hiSetCurrentWindow(window(2))
+\r t
+\a hiSetCurrentWindow(window(3))
+\r t
+\a sevWindowForm1->varListBox->value = '( "3   tper     3.8n   " )
+\r ("3   tper     3.8n   ")
+\a sevWindowForm1->varListBox->value = '("3   tper     3.8n   " )
+\r ("3   tper     3.8n   ")
+\a (sevEditSelectedVars 'sevSession1)
+\p > 
+\a hiiSetCurrentForm('sevVariablesForm1)
+\r t
+\a sevVariablesForm1->expression->value = "3.7n"
+\r "3.7n"
+\a (hiFormApply (hiGetCurrentForm)) (sevRunEngine (sevSession (hiGetCurrentForm)))
+\o Delete sst2 data in /afs/ualberta.ca/home/a/k/akolkar/simulation/sim_sorter/UltraSim/schematic/psf.
+\o generate netlist...
+\o Begin Incremental Netlisting Apr  4 12:38:01 2017
+\o End netlisting Apr  4 12:38:02 2017
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   1.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\r t
+\a hiSetCurrentWindow(window(2))
+\r t
+\a schZoomFit(1.0 0.9)
+\r t
+\o simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\a hiSetCurrentWindow(window(2))
+\r t
+\a hiSetCurrentWindow(window(3))
+\r t
+\a sevWindowForm1->varListBox->value = '( "3   tper     3.7n   " )
+\r ("3   tper     3.7n   ")
+\a sevWindowForm1->varListBox->value = '("3   tper     3.7n   " )
+\r ("3   tper     3.7n   ")
+\a (sevEditSelectedVars 'sevSession1)
+\r t
+\a sevVariablesForm1->expression->value = "3.3n"
+\r "3.3n"
+\a (hiFormApply (hiGetCurrentForm)) (sevRunEngine (sevSession (hiGetCurrentForm)))
+\o Delete sst2 data in /afs/ualberta.ca/home/a/k/akolkar/simulation/sim_sorter/UltraSim/schematic/psf.
+\o generate netlist...
+\o Begin Incremental Netlisting Apr  4 12:38:57 2017
+\o End netlisting Apr  4 12:38:57 2017
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\r t
+\o simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\a hiSetCurrentWindow(window(2))
+\r t
+\a sevVariablesForm1->expression->value = "3n"
+\r "3n"
+\a (hiFormApply (hiGetCurrentForm)) (sevRunEngine (sevSession (hiGetCurrentForm)))
+\o Delete sst2 data in /afs/ualberta.ca/home/a/k/akolkar/simulation/sim_sorter/UltraSim/schematic/psf.
+\o generate netlist...
+\o Begin Incremental Netlisting Apr  4 12:40:02 2017
+\o End netlisting Apr  4 12:40:03 2017
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   1.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\r t
+\o simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\a hiSetCurrentWindow(window(2))
+\r t
+\a sevVariablesForm1->expression->value = "3.2n"
+\r "3.2n"
+\a (hiFormApply (hiGetCurrentForm)) (sevRunEngine (sevSession (hiGetCurrentForm)))
+\o Delete sst2 data in /afs/ualberta.ca/home/a/k/akolkar/simulation/sim_sorter/UltraSim/schematic/psf.
+\o generate netlist...
+\o Begin Incremental Netlisting Apr  4 12:40:46 2017
+\o End netlisting Apr  4 12:40:47 2017
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   1.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\r t
+\o simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\a hiSetCurrentWindow(window(2))
+\r t
+\a schZoomFit(1.0 0.9)
+\r t
+\a schSingleSelectPt()
+\i -7.4375:-1.125
+\r t
+\a schSingleSelectPt()
+\i -4.6875:-2.4375
+\r nil
+\a schSingleSelectPt()
+\i -5.1875:-1
+\r t
+\a schHiDelete()
+\r t
+\a schSingleSelectPt()
+\i -4:-1
+\r t
+\a schHiDelete()
+\r t
+\a schSingleSelectPt()
+\i -2.5625:-1
+\r t
+\a schHiDelete()
+\r t
+\a schSingleSelectPt()
+\i -1.9375:-1
+\r t
+\a schHiDelete()
+\r t
+\a schSingleSelectPt()
+\i -0.9375:-2.3125
+\r nil
+\a schHiObjectProperty()
+\r t
+\a hiiSetCurrentForm('schObjPropForm)
+\r t
+\a schSingleSelectPt()
+\i -7.375:-1.125
+\r t
+\a schObjPropForm->v1->value = "0 V"
+\r "0 V"
+\a schObjPropForm->v2->value = "vpow V"
+\r "vpow V"
+\a hiFormDone(schObjPropForm)
+\r t
+\a schSingleSelectPt()
+\i -6.125:-2.3125
+\r nil
+\a schHiCopy()
+\p > 
+\a mouseAddPt()
+\i -7.4375:-1.0625
+\o Loading layers.cxt 
+\r t
+\a mouseAddPt()
+\i -5.1875:-1.0625
+\r t
+\a schHiCopy()
+\r t
+\a mouseAddPt()
+\i -5.1875:-1.0625
+\r t
+\a mouseAddPt()
+\i -4.0625:-1
+\r t
+\a hiUndo()
+\r t
+\a schHiCopy()
+\r t
+\a mouseAddPt()
+\i -5.1875:-1.0625
+\r t
+\a mouseAddPt()
+\i -4.0625:-1.0625
+\r t
+\a schHiCopy()
+\r t
+\a mouseAddPt()
+\i -4.0625:-1.0625
+\r t
+\a mouseAddPt()
+\i -2.5:-1.0625
+\r t
+\a schHiCopy()
+\r t
+\a mouseAddPt()
+\i -2.5:-1.0625
+\r t
+\a mouseAddPt()
+\i -1.9375:-1.0625
+\r t
+\a cancelEnterFun()
+\r t
+\r nil
+\a schHiCheckAndSave()
+\o Extracting "sim_sorter schematic"
+\o Schematic check completed with no errors.
+\w *WARNING* geGetEditCellView: Invalid graphics editor window.
+\w *WARNING* geGetEditCellView: Invalid graphics editor window.
+\w *WARNING* geGetEditCellView: Invalid graphics editor window.
+\w *WARNING* geGetEditCellView: Invalid graphics editor window.
+\w *WARNING* geGetEditCellView: Invalid graphics editor window.
+\o "lab3 sim_sorter schematic" saved.
+\r t
+\a hiSetCurrentWindow(window(3))
+\r t
+\a sevNetlistAndRun('sevSession1)
+\o Delete sst2 data in /afs/ualberta.ca/home/a/k/akolkar/simulation/sim_sorter/UltraSim/schematic/psf.
+\o generate netlist...
+\o Begin Incremental Netlisting Apr  4 12:42:55 2017
+\o End netlisting Apr  4 12:42:56 2017
+\o 
+\o Netlisting Statistics:
+\o 	Number of components:   19
+\o 
+\o 	Elapsed time:          1.0s (19.00/s)
+\o Errors: 0	Warnings: 0
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\r t
+\a hiiSetCurrentForm('sevVariablesForm1)
+\r t
+\a hiFormCancel(sevVariablesForm1)
+\r t
+\r nil
+\a hiSetCurrentWindow(window(2))
+\r t
+\a schZoomFit(1.0 0.9)
+\r t
+\o simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\a hiSetCurrentWindow(window(2))
+\r t
+\a schZoomFit(1.0 0.9)
+\r t
+\a hiSetCurrentWindow(window(3))
+\r t
+\a sevWindowForm1->varListBox->value = '( "3   tper     3.2n   " )
+\r ("3   tper     3.2n   ")
+\a sevWindowForm1->varListBox->value = '("3   tper     3.2n   " )
+\r ("3   tper     3.2n   ")
+\a (sevEditSelectedVars 'sevSession1)
+\p > 
+\a sevVariablesForm1->expression->value = "3.6n"
+\r "3.6n"
+\a (hiFormApply (hiGetCurrentForm)) (sevRunEngine (sevSession (hiGetCurrentForm)))
+\o Delete sst2 data in /afs/ualberta.ca/home/a/k/akolkar/simulation/sim_sorter/UltraSim/schematic/psf.
+\o generate netlist...
+\o Begin Incremental Netlisting Apr  4 12:44:11 2017
+\o End netlisting Apr  4 12:44:12 2017
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   1.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\r t
+\o simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\a hiSetCurrentWindow(window(2))
+\r t
+\a sevVariablesForm1->expression->value = "4n"
+\r "4n"
+\a (hiFormApply (hiGetCurrentForm)) (sevRunEngine (sevSession (hiGetCurrentForm)))
+\o Delete sst2 data in /afs/ualberta.ca/home/a/k/akolkar/simulation/sim_sorter/UltraSim/schematic/psf.
+\o generate netlist...
+\o Begin Incremental Netlisting Apr  4 12:45:03 2017
+\o End netlisting Apr  4 12:45:03 2017
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\r t
+\o simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\a hiSetCurrentWindow(window(2))
+\r t
+\a hiSetCurrentWindow(window(3))
+\r t
+\a sevWindowForm1->varListBox->value = '( "3   tper     4n     " )
+\r ("3   tper     4n     ")
+\a sevWindowForm1->varListBox->value = '( "3   tper     4n     " )
+\r ("3   tper     4n     ")
+\a hiFormCancel(sevVariablesForm1)
+\r t
+\r nil
+\a sevParametricTool('sevSession1)
+\o Loading paraplot.cxt 
+\o Loading AMSOSS.cxt 
+\o Loading AMS.cxt 
+\r window:13
+\a hiResizeWindow(window(13) list(21:31 764:283))
+\r t
+\a hiResizeWindow(window(13) list(33:31 776:283))
+\r t
+\a hiResizeWindow(window(13) list(47:31 790:283))
+\r t
+\a hiResizeWindow(window(13) list(61:31 804:283))
+\r t
+\a hiResizeWindow(window(13) list(86:31 829:283))
+\r t
+\a hiResizeWindow(window(13) list(111:31 854:283))
+\r t
+\a hiResizeWindow(window(13) list(138:31 881:283))
+\r t
+\a hiResizeWindow(window(13) list(171:31 914:283))
+\r t
+\a hiResizeWindow(window(13) list(216:41 959:293))
+\r t
+\a hiResizeWindow(window(13) list(267:60 1010:312))
+\r t
+\a hiResizeWindow(window(13) list(318:73 1061:325))
+\r t
+\a hiResizeWindow(window(13) list(359:84 1102:336))
+\r t
+\a hiResizeWindow(window(13) list(388:89 1131:341))
+\r t
+\a hiResizeWindow(window(13) list(401:91 1144:343))
+\r t
+\a hiResizeWindow(window(13) list(410:91 1153:343))
+\r t
+\a hiResizeWindow(window(13) list(418:93 1161:345))
+\r t
+\a hiResizeWindow(window(13) list(423:93 1166:345))
+\r t
+\a hiResizeWindow(window(13) list(429:94 1172:346))
+\r t
+\a hiResizeWindow(window(13) list(430:94 1173:346))
+\r t
+\a hiResizeWindow(window(13) list(431:95 1174:347))
+\r t
+\a apaTool0->var_0->value = "tper"
+\r "tper"
+\a apaTool0->from_0_0->value = "4n"
+\r "4n"
+\a apaTool0->to_0_0->value = "4.3n"
+\r "4.3n"
+\a apaTool0->control_0_0->value = "Linear"
+\r "Linear"
+\a apaTool0->step_0_0->value = "6"
+\r "6"
+\a apaTool0->select_0_0->value =  t
+\r t
+\a hiSetCurrentWindow(window(3))
+\r t
+\a sevWindowForm1->outListBox->value = '( "1   A0                           yes  yes  no " )
+\r ("1   A0                           yes  yes  no ")
+\a sevWindowForm1->outListBox->value = '( "1   A0                           yes  yes  no " )
+\r ("1   A0                           yes  yes  no ")
+\a sevWindowForm1->outListBox->value = '("1   A0                           yes  yes  no " )
+\r ("1   A0                           yes  yes  no ")
+\a (sevEditSelectedOuts 'sevSession1)
+\p > 
+\a hiiSetCurrentForm('sevOutputsForm1)
+\r t
+\a sevOutputsForm1->sets->plot->value =  nil
+\r nil
+\a sevOutputsForm1->outListBox->value = '("16  D3                           yes  yes  no " )
+\r ("16  D3                           yes  yes  no ")
+\a sevOutputsForm1->outListBox->value = '("1   A0                           yes  yes  no " )
+\r ("1   A0                           yes  yes  no ")
+\a sevOutputsForm1->sets->plot->value =  nil
+\r nil
+\a _hiFormApplyCB(sevOutputsForm1)
+\r t
+\a sevOutputsForm1->outListBox->value = '("2   A1                           yes  yes  no " )
+\r ("2   A1                           yes  yes  no ")
+\a sevOutputsForm1->sets->plot->value =  nil
+\r nil
+\a _hiFormApplyCB(sevOutputsForm1)
+\r t
+\a sevOutputsForm1->outListBox->value = '("3   A2                           yes  yes  no " )
+\r ("3   A2                           yes  yes  no ")
+\a sevOutputsForm1->sets->plot->value =  nil
+\r nil
+\a _hiFormApplyCB(sevOutputsForm1)
+\r t
+\a sevOutputsForm1->outListBox->value = '("4   A3                           yes  yes  no " )
+\r ("4   A3                           yes  yes  no ")
+\a sevOutputsForm1->sets->plot->value =  nil
+\r nil
+\a _hiFormApplyCB(sevOutputsForm1)
+\r t
+\a sevOutputsForm1->outListBox->value = '("5   B0                           yes  yes  no " )
+\r ("5   B0                           yes  yes  no ")
+\a sevOutputsForm1->sets->plot->value =  nil
+\r nil
+\a _hiFormApplyCB(sevOutputsForm1)
+\r t
+\a sevOutputsForm1->outListBox->value = '("6   B1                           yes  yes  no " )
+\r ("6   B1                           yes  yes  no ")
+\a sevOutputsForm1->sets->plot->value =  nil
+\r nil
+\a _hiFormApplyCB(sevOutputsForm1)
+\r t
+\a sevOutputsForm1->outListBox->value = '("7   B2                           yes  yes  no " )
+\r ("7   B2                           yes  yes  no ")
+\a sevOutputsForm1->sets->plot->value =  nil
+\r nil
+\a _hiFormApplyCB(sevOutputsForm1)
+\r t
+\a sevOutputsForm1->outListBox->value = '("8   B3                           yes  yes  no " )
+\r ("8   B3                           yes  yes  no ")
+\a sevOutputsForm1->sets->plot->value =  nil
+\r nil
+\a _hiFormApplyCB(sevOutputsForm1)
+\r t
+\a sevOutputsForm1->outListBox->value = '("9   C0                           yes  yes  no " )
+\r ("9   C0                           yes  yes  no ")
+\a sevOutputsForm1->sets->plot->value =  nil
+\r nil
+\a _hiFormApplyCB(sevOutputsForm1)
+\r t
+\a sevOutputsForm1->outListBox->value = '("10  C1                           yes  yes  no " )
+\r ("10  C1                           yes  yes  no ")
+\a sevOutputsForm1->sets->plot->value =  nil
+\r nil
+\a _hiFormApplyCB(sevOutputsForm1)
+\r t
+\a sevOutputsForm1->outListBox->value = '("11  C2                           yes  yes  no " )
+\r ("11  C2                           yes  yes  no ")
+\a sevOutputsForm1->sets->plot->value =  nil
+\r nil
+\a _hiFormApplyCB(sevOutputsForm1)
+\r t
+\a sevOutputsForm1->outListBox->value = '("13  D0                           yes  yes  no " )
+\r ("13  D0                           yes  yes  no ")
+\a sevOutputsForm1->outListBox->value = '("12  C3                           yes  yes  no " )
+\r ("12  C3                           yes  yes  no ")
+\a sevOutputsForm1->sets->plot->value =  nil
+\r nil
+\a _hiFormApplyCB(sevOutputsForm1)
+\r t
+\a sevOutputsForm1->outListBox->value = '("13  D0                           yes  yes  no " )
+\r ("13  D0                           yes  yes  no ")
+\a sevOutputsForm1->sets->plot->value =  nil
+\r nil
+\a _hiFormApplyCB(sevOutputsForm1)
+\r t
+\a sevOutputsForm1->outListBox->value = '("14  D1                           yes  yes  no " )
+\r ("14  D1                           yes  yes  no ")
+\a sevOutputsForm1->sets->plot->value =  nil
+\r nil
+\a _hiFormApplyCB(sevOutputsForm1)
+\r t
+\a sevOutputsForm1->outListBox->value = '("15  D2                           yes  yes  no " )
+\r ("15  D2                           yes  yes  no ")
+\a sevOutputsForm1->sets->plot->value =  nil
+\r nil
+\a _hiFormApplyCB(sevOutputsForm1)
+\r t
+\a sevOutputsForm1->outListBox->value = '("16  D3                           yes  yes  no " )
+\r ("16  D3                           yes  yes  no ")
+\a sevOutputsForm1->sets->plot->value =  nil
+\r nil
+\a _hiFormApplyCB(sevOutputsForm1)
+\r t
+\a sevOutputsForm1->outListBox->value = '("33  CLK                          yes  yes  no " )
+\r ("33  CLK                          yes  yes  no ")
+\a sevOutputsForm1->sets->plot->value =  nil
+\r nil
+\a _hiFormApplyCB(sevOutputsForm1)
+\r t
+\a hiFormDone(sevOutputsForm1)
+\r t
+\r t
+\a hiSetCurrentWindow(window(13))
+\r t
+\a (apaStartCB (hiGetCurrentWindow) ?all nil )
+\o Delete sst2 data in /afs/ualberta.ca/home/a/k/akolkar/simulation/sim_sorter/UltraSim/schematic/psf.
+\o Writing simulator output to file "/afs/ualberta.ca/home/a/k/akolkar/simulation/sim_sorter/UltraSim/schematic/netlist/paraplot-sim-out".
+\o 6 parametric simulations remaining.
+\o Setting tper = 4e-09
+\o Begin Incremental Netlisting Apr  4 12:50:21 2017
+\o End netlisting Apr  4 12:50:22 2017
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   1.0s
+\r t
+\a hiSetCurrentWindow(window(2))
+\r t
+\o The simulator output is in the file "/afs/ualberta.ca/home/a/k/akolkar/simulation/sim_sorter/UltraSim/schematic/netlist/paraplot-sim-out".
+\o parametric simulation complete.
+\a hiSetCurrentWindow(window(13))
+\r t
+\a apaTool0->from_0_0->value = "4.2n"
+\r "4.2n"
+\a apaTool0->step_0_0->value = "5"
+\r "5"
+\a (apaStartCB (hiGetCurrentWindow) ?all nil )
+\o Delete sst2 data in /afs/ualberta.ca/home/a/k/akolkar/simulation/sim_sorter/UltraSim/schematic/psf.
+\o Writing simulator output to file "/afs/ualberta.ca/home/a/k/akolkar/simulation/sim_sorter/UltraSim/schematic/netlist/paraplot-sim-out".
+\o 5 parametric simulations remaining.
+\o Setting tper = 4.2e-09
+\o Begin Incremental Netlisting Apr  4 12:55:23 2017
+\o End netlisting Apr  4 12:55:23 2017
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\r t
+\a hiSetCurrentWindow(window(4))
+\r t
+\a hiSetCurrentWindow(window(14))
+\r t
+\a hiSetCurrentWindow(window(2))
+\r t
+\o The simulator output is in the file "/afs/ualberta.ca/home/a/k/akolkar/simulation/sim_sorter/UltraSim/schematic/netlist/paraplot-sim-out".
+\o parametric simulation complete.
+\a hiSetCurrentWindow(window(13))
+\r t
+\a apaTool0->from_0_0->value = "4.25n"
+\r "4.25n"
+\a apaTool0->to_0_0->value = "4.35n"
+\r "4.35n"
+\a (apaStartCB (hiGetCurrentWindow) ?all nil )
+\o Delete sst2 data in /afs/ualberta.ca/home/a/k/akolkar/simulation/sim_sorter/UltraSim/schematic/psf.
+\o Writing simulator output to file "/afs/ualberta.ca/home/a/k/akolkar/simulation/sim_sorter/UltraSim/schematic/netlist/paraplot-sim-out".
+\o 5 parametric simulations remaining.
+\o Setting tper = 4.25e-09
+\o Begin Incremental Netlisting Apr  4 12:59:20 2017
+\o End netlisting Apr  4 12:59:21 2017
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   1.0s
+\r t
+\a hiSetCurrentWindow(window(2))
+\r t
+\o The simulator output is in the file "/afs/ualberta.ca/home/a/k/akolkar/simulation/sim_sorter/UltraSim/schematic/netlist/paraplot-sim-out".
+\o parametric simulation complete.
+\a hiCloseWindow(window(13))
+\r t
+\a hiCloseWindow(window(14))
+\r t
+\a hiCloseWindow(window(4))
+\r t
+\a schZoomFit(1.0 0.9)
+\r t
+\a hiSetCurrentWindow(window(3))
+\r t
+\a sevWindowForm1->varListBox->value = '( "3   tper     4n     " )
+\r ("3   tper     4n     ")
+\a sevWindowForm1->varListBox->value = '("3   tper     4n     " )
+\r ("3   tper     4n     ")
+\a (sevEditSelectedVars 'sevSession1)
+\p > 
+\a hiiSetCurrentForm('sevVariablesForm1)
+\r t
+\a sevVariablesForm1->expression->value = "4.32n"
+\r "4.32n"
+\a _hiFormApplyCB(sevVariablesForm1)
+\r t
+\a sevWindowForm1->anaListBox->value = '( "1   tran       0      100n                 yes" )
+\r ("1   tran       0      100n                 yes")
+\a sevWindowForm1->anaListBox->value = '("1   tran       0      100n                 yes" )
+\r ("1   tran       0      100n                 yes")
+\a (sevEditSelectedAnas 'sevSession1)
+\p > 
+\a _asii_UltraSim1_analysis_form->tran_stop->value = "300n"
+\r "300n"
+\a hiFormDone(_asii_UltraSim1_analysis_form)
+\r t
+\r t
+\a hiiSetCurrentForm('sevVariablesForm1)
+\r t
+\a (hiFormApply (hiGetCurrentForm)) (sevRunEngine (sevSession (hiGetCurrentForm)))
+\o Delete sst2 data in /afs/ualberta.ca/home/a/k/akolkar/simulation/sim_sorter/UltraSim/schematic/psf.
+\o generate netlist...
+\o Begin Incremental Netlisting Apr  4 13:11:03 2017
+\o End netlisting Apr  4 13:11:04 2017
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   1.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\r t
+\o simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\a hiSetCurrentWindow(window(2))
+\r t
+\a hiSetCurrentWindow(window(3))
+\r t
+\a sevSaveState('sevSession1)
+\p > 
+\a hiiSetCurrentForm('sevSaveForm1)
+\r t
+\a hiFormDone(sevSaveForm1)
+\p > 
+\a hiDBoxOK(sevblockingDialogBox) 
+\r t
+\e *Error* eval: User interrupt
+\r t
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(3) list(1077:465 1655:837))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(18) list(479:184 994:884))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:284))
+\r t
+\a hiiSetCurrentForm('sevVariablesForm1)
+\r t
+\a hiFormCancel(sevVariablesForm1) 
+\r t
+\r nil
+\a hiSetCurrentWindow(window(18))
+\r t
+\a hiCloseWindow(window(18))
+\r t
+\a hiCloseWindow(window(3))
+\r t
+\e *Error* eval: User interrupt
+\w X Toolkit Warning: 
+\w     Name: windowBanner
+\w     Class: XmRowColumn
+\w     XtGrabKeyboard failed.
+\w 
+\a hiResizeWindow(window(1) list(403:123 1128:318))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:318))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:318))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:318))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:318))
+\r t
+\a hiResizeWindow(window(1) list(403:123 1128:318))
+\r t
+\a hiCloseWindow(window(2))
+\r t
